@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Is There a Nats Game Today?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <h1>Is there a Nats game today?</h1>
+        <div class="sub">Washington Nationals · Eastern Time</div>
+      </header>
+
+      <section id="app" class="card">
+        <div class="loading">Checking today's schedule…</div>
+      </section>
+
+      <footer class="footer">
+        <button id="refreshBtn" class="refresh">Refresh</button>
+        <div class="attribution">
+          Data: MLB Stats API · Team ID 120
+        </div>
+      </footer>
+    </main>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+  </html>
+
+
