@@ -88,6 +88,75 @@ The frontend reads only these JSON files from the same origin.
 - On iOS Safari: Share → Add to Home Screen.
 - On Android Chrome: you should see an “Install app” prompt or use the browser menu → Add to Home Screen.
 
+## SEO and indexing
+This site is a static, crawlable page. To help search engines, you can:
+
+- Keep a descriptive `<title>` and meta description (already added in `index.html`).
+- Add a canonical tag (replace the domain):
+
+  ```html
+  <link rel="canonical" href="https://your-domain.example/" />
+  ```
+
+- Provide a simple `robots.txt` and `sitemap.xml` at the site root:
+
+  robots.txt
+  ```
+  User-agent: *
+  Allow: /
+  Sitemap: https://your-domain.example/sitemap.xml
+  ```
+
+  sitemap.xml
+  ```xml
+  <?xml version="1.0" encoding="UTF-8"?>
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+      <loc>https://your-domain.example/</loc>
+      <changefreq>hourly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  </urlset>
+  ```
+
+- Add structured data (JSON‑LD) based on the prebuilt JSON files so crawlers see key info without running JavaScript. A simple pattern is to generate a file during the fetch step and inline it into `index.html`.
+
+  Example (generated from `data/nats.json` and `data/audi.json`):
+  ```html
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Is There a Game Today Near Navy Yard?",
+    "url": "https://your-domain.example/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsEvent",
+    "name": "Washington Nationals vs {{opponent}}",
+    "sport": "Baseball",
+    "startDate": "{{dateISO}}",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": {"@type": "StadiumOrArena", "name": "{{venue}}"},
+    "homeTeam": "Washington Nationals",
+    "awayTeam": "{{opponent}}"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "{{audiNextTitle}}",
+    "startDate": "{{audiNextStartISO}}",
+    "location": {"@type": "StadiumOrArena", "name": "Audi Field"}
+  }
+  </script>
+  ```
+
+  To automate: extend `scripts/fetch_*.js` to write `includes/schema.html` and include it in `index.html` during your deploy step.
+
 ## Notes
 - The site does not use analytics or cookies.
 - There’s a `Refresh` button if you want to re-check the API without reloading the page.
