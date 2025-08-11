@@ -199,4 +199,38 @@ details.next[open] > summary::after { content: '▾'; }
   .meta { grid-template-columns: 1fr; }
 }
 
+/* Install banner */
+.install-banner {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
+  padding: 12px 14px;
+  display: none;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  z-index: 50;
+}
+
+.install-banner.show { display: flex; }
+.install-text { color: var(--text); font-size: 14px; }
+.install-sub { color: var(--muted); font-size: 12px; margin-top: 2px; }
+.install-actions { display: flex; gap: 8px; }
+
+.btn {
+  border-radius: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: transparent;
+  color: var(--text);
+}
+.btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn-secondary { background: transparent; }
+
 

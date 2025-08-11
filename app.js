@@ -255,3 +255,26 @@ document.getElementById('refreshBtn').addEventListener('click', refresh);
 refresh();
 
 
+
+// PWA install encouragement
+let deferredPrompt = null;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  const banner = document.getElementById('installBanner');
+  if (banner) banner.classList.add('show');
+});
+
+function hideInstallBanner() {
+  const banner = document.getElementById('installBanner');
+  if (banner) banner.classList.remove('show');
+}
+
+document.getElementById('installDismiss').addEventListener('click', hideInstallBanner);
+document.getElementById('installAccept').addEventListener('click', async () => {
+  if (!deferredPrompt) return hideInstallBanner();
+  deferredPrompt.prompt();
+  await deferredPrompt.userChoice;
+  deferredPrompt = null;
+  hideInstallBanner();
+});
