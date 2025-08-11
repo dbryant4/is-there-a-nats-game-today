@@ -7,6 +7,8 @@ function formatDateToYYYYMMDD(date) {
   return `${y}-${m}-${d}`;
 }
 
+// No external fetches; data is prebuilt in ./data/*.json
+
 function toEasternTimeString(isoString) {
   try {
     const date = new Date(isoString);
@@ -20,50 +22,112 @@ function toEasternTimeString(isoString) {
   }
 }
 
-async function fetchTodaysGame() {
-  const today = new Date();
-  const dateParam = formatDateToYYYYMMDD(today);
-  const url = `https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=${NATS_TEAM_ID}&date=${dateParam}`;
-  const res = await fetch(url, { cache: 'no-store' });
-  if (!res.ok) throw new Error('Failed to fetch schedule');
-  const data = await res.json();
-  const dates = data?.dates ?? [];
-  if (dates.length === 0) return null;
-  const games = dates[0]?.games ?? [];
-  if (games.length === 0) return null;
-  return games[0];
+function toEasternDateString(isoString) {
+  try {
+    const date = new Date(isoString);
+    return new Intl.DateTimeFormat('en-US', {
+      timeZone: 'America/New_York',
+      month: 'short',
+      day: 'numeric',
+    }).format(date);
+  } catch (e) {
+    return '';
+  }
+}
+
+function daysUntilInET(isoString) {
+  try {
+    const eventDate = new Date(isoString);
+    const fmt = new Intl.DateTimeFormat('en-CA', {
+      timeZone: 'America/New_York',
+      year: 'numeric', month: '2-digit', day: '2-digit',
+    });
+    const partsToday = fmt.formatToParts(new Date());
+    const partsEvent = fmt.formatToParts(eventDate);
+    const yT = Number(partsToday.find(p=>p.type==='year').value);
+    const mT = Number(partsToday.find(p=>p.type==='month').value);
+    const dT = Number(partsToday.find(p=>p.type==='day').value);
+    const yE = Number(partsEvent.find(p=>p.type==='year').value);
+    const mE = Number(partsEvent.find(p=>p.type==='month').value);
+    const dE = Number(partsEvent.find(p=>p.type==='day').value);
+    const startTodayUTC = Date.UTC(yT, mT - 1, dT);
+    const startEventUTC = Date.UTC(yE, mE - 1, dE);
+    const diffDays = Math.round((startEventUTC - startTodayUTC) / 86400000);
+    return diffDays;
+  } catch {
+    return null;
+  }
+}
+
+function formatInDays(n) {
+  if (n === null || Number.isNaN(n)) return '';
+  if (n <= 0) return 'today';
+  if (n === 1) return 'in 1 day';
+  return `in ${n} days`;
+}
+
+function setCardImpact(container, level) {
+  const card = container.closest('.card');
+  if (!card) return;
+  const impactClasses = ['impact-ok', 'impact-warn', 'impact-none', 'impact-danger'];
+  for (const c of impactClasses) card.classList.remove(c);
+  const classMap = { ok: 'impact-ok', warn: 'impact-warn', none: 'impact-none', danger: 'impact-danger' };
+  card.classList.add(classMap[level] || 'impact-none');
+}
+
+// Live MLB fetch removed; using static JSON
+
+async function fetchNatsFromStatic() {
+  try {
+    const res = await fetch('./data/nats.json', { cache: 'no-store' });
+    if (!res.ok) return null;
+    const d = await res.json();
+    return d?.nextEvent || null;
+  } catch { return null; }
+}
+
+// Audi Field live fetch removed; using static JSON
+
+async function fetchAudiFromStatic() {
+  try {
+    const res = await fetch('./data/audi.json', { cache: 'no-store' });
+    if (!res.ok) return { eventsToday: [], nextEvent: null };
+    const d = await res.json();
+    return { eventsToday: d?.eventsToday || [], nextEvent: d?.nextEvent || null };
+  } catch { return { eventsToday: [], nextEvent: null }; }
 }
 
 function computeTrafficImpact(isHome) {
   return isHome ? {
     label: 'Higher local traffic expected (home game)',
-    level: 'warn',
+    level: 'danger',
   } : {
     label: 'Slight traffic increase (away game)',
-    level: 'ok',
+    level: 'warn',
   };
 }
 
 function renderNoGame(container) {
+  setCardImpact(container, 'none');
   container.innerHTML = `
     <div class="status"><span class="dot none"></span>No game today</div>
     <div class="detail">Enjoy smoother traffic than usual.</div>
   `;
 }
 
-function renderGame(container, game) {
-  const homeTeam = game?.teams?.home?.team?.name;
-  const awayTeam = game?.teams?.away?.team?.name;
-  const isHome = game?.teams?.home?.team?.id === NATS_TEAM_ID;
-  const opponent = isHome ? awayTeam : homeTeam;
-  const venue = game?.venue?.name ?? '';
-  const startTime = toEasternTimeString(game?.gameDate);
+function renderNatsEvent(container, ev) {
+  const isHome = Boolean(ev?.isHome);
+  const opponent = ev?.opponent || 'Opponent';
+  const venue = ev?.venue || (isHome ? 'Nationals Park' : '');
+  const startTime = toEasternTimeString(ev?.dateISO);
   const impact = computeTrafficImpact(isHome);
+  setCardImpact(container, impact.level);
 
   container.innerHTML = `
     <div class="status">
       <span class="dot ${impact.level}"></span>
-      ${isHome ? 'Home game' : 'Away game'} vs ${opponent}
+      <span class="badge ${isHome ? 'badge-home' : 'badge-away'}">${isHome ? 'Home' : 'Away'}</span>
+      ${isHome ? 'vs' : 'at'} ${opponent}
     </div>
     <div class="meta">
       <div>
@@ -79,7 +143,10 @@ function renderGame(container, game) {
   `;
 }
 
+// Removed D.C. United section; covered by Audi Field events
+
 function renderError(container, message) {
+  setCardImpact(container, 'none');
   container.innerHTML = `
     <div class="status"><span class="dot warn"></span>Could not load schedule</div>
     <div class="detail">${message}</div>
@@ -87,17 +154,89 @@ function renderError(container, message) {
 }
 
 async function refresh() {
-  const container = document.getElementById('app');
-  container.innerHTML = '<div class="loading">Checking today\'s schedule…</div>';
-  try {
-    const game = await fetchTodaysGame();
-    if (!game) {
-      renderNoGame(container);
+  const natsEl = document.getElementById('nats-app');
+  const audiEl = document.getElementById('audi-app');
+  natsEl.innerHTML = '<div class="loading">Checking today\'s Nationals schedule…</div>';
+  audiEl.innerHTML = '<div class="loading">Checking today\'s Audi Field events…</div>';
+  setCardImpact(natsEl, 'none');
+  setCardImpact(audiEl, 'none');
+
+  const [natsGame, audiEvents] = await Promise.all([
+    fetchNatsFromStatic(),
+    fetchAudiFromStatic(),
+  ]);
+
+  if (natsGame) {
+    if (natsGame.isToday) {
+      renderNatsEvent(natsEl, natsGame);
     } else {
-      renderGame(container, game);
+      // Not today: show subdued next event info
+      setCardImpact(natsEl, 'none');
+      const inDays = formatInDays(daysUntilInET(natsGame.dateISO));
+      natsEl.innerHTML = `
+        <div class="status"><span class="dot none"></span>No game today</div>
+        <div class="meta">
+          <div><label>Next game</label><div>${natsGame.isHome ? 'Home' : 'Away'} ${natsGame.isHome ? 'vs' : 'at'} ${natsGame.opponent}</div></div>
+          <div><label>Date</label><div>${toEasternDateString(natsGame.dateISO)} · ${toEasternTimeString(natsGame.dateISO)}</div></div>
+        </div>
+        <div class="detail">Traffic impact lower today; ${inDays ? `next game ${inDays}.` : 'plan ahead for the next game.'}</div>
+      `;
     }
-  } catch (e) {
-    renderError(container, e.message ?? 'Unknown error');
+  } else {
+    renderNoGame(natsEl);
+  }
+
+  {
+    const { eventsToday, nextEvent } = audiEvents || { eventsToday: [], nextEvent: null };
+    if (eventsToday && eventsToday.length > 0) {
+      const first = eventsToday[0];
+      const time = toEasternTimeString(first.startISO);
+      setCardImpact(audiEl, 'danger');
+      let nextBlock = '';
+      if (nextEvent && !nextEvent.isToday && nextEvent.startISO !== first.startISO) {
+        const inDaysRaw = daysUntilInET(nextEvent.startISO);
+        const inDaysText = formatInDays(inDaysRaw);
+        nextBlock = `
+          <details class="next">
+            <summary>Next event ${inDaysText ? inDaysText : ''}</summary>
+            <div class="meta">
+              <div><label>Event</label><div>${nextEvent.title}</div></div>
+              <div><label>Date</label><div>${toEasternDateString(nextEvent.startISO)} · ${toEasternTimeString(nextEvent.startISO)}</div></div>
+            </div>
+          </details>
+        `;
+      }
+      audiEl.innerHTML = `
+        <div class="status"><span class="dot danger"></span>Event at Audi Field</div>
+        <div class="meta">
+          <div><label>Event</label><div>${first.title}</div></div>
+          <div><label>Start</label><div>${time}</div></div>
+        </div>
+        ${nextBlock}
+        <div class="detail">${eventsToday.length > 1 ? `${eventsToday.length} events today` : 'Traffic likely higher near the stadium'}</div>
+      `;
+    } else if (nextEvent) {
+      setCardImpact(audiEl, 'ok');
+      const inDaysRaw = daysUntilInET(nextEvent.startISO);
+      const inDaysText = formatInDays(inDaysRaw);
+      audiEl.innerHTML = `
+        <div class="status"><span class="dot ok"></span>No event today</div>
+        <div class="detail">Traffic impact lower today; plan ahead for the next event.</div>
+        <details class="next">
+          <summary>Next event ${inDaysText ? inDaysText : ''}</summary>
+          <div class="meta">
+            <div><label>Event</label><div>${nextEvent.title}</div></div>
+            <div><label>Date</label><div>${toEasternDateString(nextEvent.startISO)} · ${toEasternTimeString(nextEvent.startISO)}</div></div>
+          </div>
+        </details>
+      `;
+    } else {
+      setCardImpact(audiEl, 'ok');
+      audiEl.innerHTML = `
+        <div class="status"><span class="dot ok"></span>No event today</div>
+        <div class="detail">Area traffic likely normal.</div>
+      `;
+    }
   }
 }
 
