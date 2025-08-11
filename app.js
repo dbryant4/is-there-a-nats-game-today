@@ -82,7 +82,7 @@ async function fetchNatsFromStatic() {
     const res = await fetch('./data/nats.json', { cache: 'no-store' });
     if (!res.ok) return null;
     const d = await res.json();
-    return d?.nextEvent || null;
+    return { nextEvent: d?.nextEvent || null, lastUpdated: d?.lastUpdated || null };
   } catch { return null; }
 }
 
@@ -91,10 +91,10 @@ async function fetchNatsFromStatic() {
 async function fetchAudiFromStatic() {
   try {
     const res = await fetch('./data/audi.json', { cache: 'no-store' });
-    if (!res.ok) return { eventsToday: [], nextEvent: null };
+    if (!res.ok) return { eventsToday: [], nextEvent: null, lastUpdated: null };
     const d = await res.json();
-    return { eventsToday: d?.eventsToday || [], nextEvent: d?.nextEvent || null };
-  } catch { return { eventsToday: [], nextEvent: null }; }
+    return { eventsToday: d?.eventsToday || [], nextEvent: d?.nextEvent || null, lastUpdated: d?.lastUpdated || null };
+  } catch { return { eventsToday: [], nextEvent: null, lastUpdated: null }; }
 }
 
 function computeTrafficImpact(isHome) {
@@ -161,14 +161,18 @@ async function refresh() {
   setCardImpact(natsEl, 'none');
   setCardImpact(audiEl, 'none');
 
-  const [natsGame, audiEvents] = await Promise.all([
+  const [natsData, audiData] = await Promise.all([
     fetchNatsFromStatic(),
     fetchAudiFromStatic(),
   ]);
 
-  if (natsGame) {
+  if (natsData && natsData.nextEvent) {
+    const natsGame = natsData.nextEvent;
     if (natsGame.isToday) {
       renderNatsEvent(natsEl, natsGame);
+      if (natsData.lastUpdated) {
+        natsEl.insertAdjacentHTML('beforeend', `<div class="last-checked">Last checked: ${toEasternDateString(natsData.lastUpdated)} · ${toEasternTimeString(natsData.lastUpdated)}</div>`);
+      }
     } else {
       // Not today: show subdued next event info
       setCardImpact(natsEl, 'none');
@@ -180,14 +184,18 @@ async function refresh() {
           <div><label>Date</label><div>${toEasternDateString(natsGame.dateISO)} · ${toEasternTimeString(natsGame.dateISO)}</div></div>
         </div>
         <div class="detail">Traffic impact lower today; ${inDays ? `next game ${inDays}.` : 'plan ahead for the next game.'}</div>
+        ${natsData.lastUpdated ? `<div class="last-checked">Last checked: ${toEasternDateString(natsData.lastUpdated)} · ${toEasternTimeString(natsData.lastUpdated)}</div>` : ''}
       `;
     }
   } else {
     renderNoGame(natsEl);
+    if (natsData && natsData.lastUpdated) {
+      natsEl.insertAdjacentHTML('beforeend', `<div class="last-checked">Last checked: ${toEasternDateString(natsData.lastUpdated)} · ${toEasternTimeString(natsData.lastUpdated)}</div>`);
+    }
   }
 
   {
-    const { eventsToday, nextEvent } = audiEvents || { eventsToday: [], nextEvent: null };
+    const { eventsToday, nextEvent, lastUpdated } = audiData || { eventsToday: [], nextEvent: null, lastUpdated: null };
     if (eventsToday && eventsToday.length > 0) {
       const first = eventsToday[0];
       const time = toEasternTimeString(first.startISO);
@@ -214,6 +222,7 @@ async function refresh() {
         </div>
         ${nextBlock}
         <div class="detail">${eventsToday.length > 1 ? `${eventsToday.length} events today` : 'Traffic likely higher near the stadium'}</div>
+        ${lastUpdated ? `<div class="last-checked">Last checked: ${toEasternDateString(lastUpdated)} · ${toEasternTimeString(lastUpdated)}</div>` : ''}
       `;
     } else if (nextEvent) {
       setCardImpact(audiEl, 'ok');
@@ -221,6 +230,7 @@ async function refresh() {
       const inDaysText = formatInDays(inDaysRaw);
       audiEl.innerHTML = `
         <div class="status"><span class="dot ok"></span>No event today</div>
+        ${lastUpdated ? `<div class="last-checked">Last checked: ${toEasternDateString(lastUpdated)} · ${toEasternTimeString(lastUpdated)}</div>` : ''}
         <div class="detail">Traffic impact lower today; plan ahead for the next event.</div>
         <details class="next">
           <summary>Next event ${inDaysText ? inDaysText : ''}</summary>
@@ -235,6 +245,7 @@ async function refresh() {
       audiEl.innerHTML = `
         <div class="status"><span class="dot ok"></span>No event today</div>
         <div class="detail">Area traffic likely normal.</div>
+        ${lastUpdated ? `<div class="last-checked">Last checked: ${toEasternDateString(lastUpdated)} · ${toEasternTimeString(lastUpdated)}</div>` : ''}
       `;
     }
   }

@@ -124,6 +124,13 @@ body {
   color: var(--muted);
 }
 
+.last-checked {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 11px;
+  opacity: 0.75;
+}
+
 /* Collapsible "Next event" section */
 details.next {
   margin-top: 12px;
