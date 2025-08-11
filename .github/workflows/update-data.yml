@@ -1,0 +1,48 @@
+name: Update data (daily 12:05am ET)
+
+on:
+  schedule:
+    # GitHub Actions uses UTC. Run at 04:05 and 05:05 UTC so that one of them
+    # always corresponds to 12:05am Eastern regardless of DST.
+    - cron: "5 4 * * *"
+    - cron: "5 5 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  fetch_and_commit:
+    name: Fetch latest data and push
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run data fetch script
+        run: bash scripts/fetch_all.sh
+
+      - name: Commit and push changes (if any)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore(data): update Nats/Audi data ($(date -u +'%Y-%m-%d %H:%M:%SZ'))"
+          git push
+
+
