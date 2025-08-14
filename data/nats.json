@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2025-08-13T05:11:46.732Z",
+  "lastUpdated": "2025-08-14T04:17:37.020Z",
   "nextEvent": {
     "isToday": true,
-    "isHome": false,
-    "opponent": "Kansas City Royals",
-    "venue": "Kauffman Stadium",
-    "dateISO": "2025-08-13T18:10:00Z"
+    "isHome": true,
+    "opponent": "Philadelphia Phillies",
+    "venue": "Nationals Park",
+    "dateISO": "2025-08-14T22:45:00Z"
   }
 }
