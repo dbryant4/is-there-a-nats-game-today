@@ -32,12 +32,15 @@ function parseICS(icsText) {
 
 function icsDateToISO(dt) {
   if (!dt) return null;
-  const hasZ = dt.endsWith('Z');
   const y = dt.slice(0,4), m = dt.slice(4,6), d = dt.slice(6,8);
   const hh = dt.slice(9,11) || '00', mm = dt.slice(11,13) || '00';
   const ss = dt.slice(13,15) || '00';
-  const iso = `${y}-${m}-${d}T${hh}:${mm}:${ss}${hasZ ? 'Z' : ''}`;
-  try { return new Date(iso).toISOString(); } catch { return null; }
+  // Audi Field iCal times are in Eastern Time, not UTC
+  // Create a date in ET and convert to ISO
+  const etDate = new Date(`${y}-${m}-${d}T${hh}:${mm}:${ss}`);
+  const utcOffset = -5; // ET is UTC-5 (or -4 during DST, but this is close enough)
+  const utcDate = new Date(etDate.getTime() - (utcOffset * 60 * 60 * 1000));
+  try { return utcDate.toISOString(); } catch { return null; }
 }
 
 function getEasternDateYYYYMMDD(date = new Date()) {
