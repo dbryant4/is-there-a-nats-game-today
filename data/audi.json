@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2025-08-16T05:11:07.846Z",
-  "eventsToday": [],
+  "lastUpdated": "2025-08-17T04:18:54.784Z",
+  "eventsToday": [
+    {
+      "title": "HBCU Women’s Soccer Invitational: Howard vs. Hampton",
+      "startISO": "2025-08-17T20:00:00.000Z",
+      "endISO": "2025-08-17T22:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "HBCU Women’s Soccer Invitational: Howard vs. Hampton",
     "startISO": "2025-08-17T20:00:00.000Z",
     "endISO": "2025-08-17T22:00:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }
