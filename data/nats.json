@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2025-08-17T05:11:23.574Z",
+  "lastUpdated": "2025-08-18T04:24:08.470Z",
   "nextEvent": {
-    "isToday": true,
+    "isToday": false,
     "isHome": true,
-    "opponent": "Philadelphia Phillies",
+    "opponent": "New York Mets",
     "venue": "Nationals Park",
-    "dateISO": "2025-08-17T15:35:00Z"
+    "dateISO": "2025-08-19T22:45:00Z"
   }
 }

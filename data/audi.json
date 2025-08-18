@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2025-08-17T05:11:24.087Z",
-  "eventsToday": [
-    {
-      "title": "HBCU Women’s Soccer Invitational: Howard vs. Hampton",
-      "startISO": "2025-08-17T20:00:00.000Z",
-      "endISO": "2025-08-17T22:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2025-08-18T04:24:10.567Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "HBCU Women’s Soccer Invitational: Howard vs. Hampton",
-    "startISO": "2025-08-17T20:00:00.000Z",
-    "endISO": "2025-08-17T22:00:00.000Z",
-    "isToday": true
+    "title": "Movies on the Pitch: Cool Runnings (1993)",
+    "startISO": "2025-08-22T01:00:00.000Z",
+    "endISO": "2025-08-22T01:00:00.000Z",
+    "isToday": false
   }
 }
