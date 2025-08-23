@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2025-08-22T05:11:13.039Z",
-  "eventsToday": [],
+  "lastUpdated": "2025-08-23T04:12:59.679Z",
+  "eventsToday": [
+    {
+      "title": "D.C. United vs. Inter Miami CF",
+      "startISO": "2025-08-24T00:30:00.000Z",
+      "endISO": "2025-08-24T03:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "D.C. United vs. Inter Miami CF",
     "startISO": "2025-08-24T00:30:00.000Z",
     "endISO": "2025-08-24T03:00:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }
