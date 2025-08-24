@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2025-08-23T05:10:57.653Z",
-  "eventsToday": [
-    {
-      "title": "D.C. United vs. Inter Miami CF",
-      "startISO": "2025-08-24T00:30:00.000Z",
-      "endISO": "2025-08-24T03:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2025-08-24T04:14:37.675Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "D.C. United vs. Inter Miami CF",
-    "startISO": "2025-08-24T00:30:00.000Z",
-    "endISO": "2025-08-24T03:00:00.000Z",
-    "isToday": true
+    "title": "Movies on the Pitch: Shrek",
+    "startISO": "2025-08-29T00:00:00.000Z",
+    "endISO": "2025-08-29T03:00:00.000Z",
+    "isToday": false
   }
 }
