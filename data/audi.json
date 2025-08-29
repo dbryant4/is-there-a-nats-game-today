@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2025-08-28T05:11:15.901Z",
-  "eventsToday": [
-    {
-      "title": "Movies on the Pitch: Shrek",
-      "startISO": "2025-08-29T00:00:00.000Z",
-      "endISO": "2025-08-29T03:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2025-08-29T04:13:11.603Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "Movies on the Pitch: Shrek",
-    "startISO": "2025-08-29T00:00:00.000Z",
-    "endISO": "2025-08-29T03:00:00.000Z",
-    "isToday": true
+    "title": "Power FC vs. Spokane Zephyr FC",
+    "startISO": "2025-08-31T00:00:00.000Z",
+    "endISO": "2025-08-31T02:00:00.000Z",
+    "isToday": false
   }
 }
