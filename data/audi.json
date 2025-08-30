@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2025-08-29T05:11:11.948Z",
-  "eventsToday": [],
+  "lastUpdated": "2025-08-30T04:13:01.526Z",
+  "eventsToday": [
+    {
+      "title": "Power FC vs. Spokane Zephyr FC",
+      "startISO": "2025-08-31T00:00:00.000Z",
+      "endISO": "2025-08-31T02:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "Power FC vs. Spokane Zephyr FC",
     "startISO": "2025-08-31T00:00:00.000Z",
     "endISO": "2025-08-31T02:00:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }
