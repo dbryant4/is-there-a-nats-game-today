@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2025-09-11T05:11:40.352Z",
+  "lastUpdated": "2025-09-12T04:13:30.805Z",
   "nextEvent": {
     "isToday": true,
-    "isHome": false,
-    "opponent": "Miami Marlins",
-    "venue": "loanDepot park",
-    "dateISO": "2025-09-11T22:40:00Z"
+    "isHome": true,
+    "opponent": "Pittsburgh Pirates",
+    "venue": "Nationals Park",
+    "dateISO": "2025-09-12T22:45:00Z"
   }
 }
