@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2025-09-12T05:11:10.209Z",
+  "lastUpdated": "2025-09-13T04:13:06.655Z",
   "eventsToday": [
     {
-      "title": "Power FC vs. Lexington FC",
-      "startISO": "2025-09-13T00:00:00.000Z",
-      "endISO": "2025-09-13T00:00:00.000Z"
+      "title": "D.C. United vs. Orlando City SC",
+      "startISO": "2025-09-14T00:30:00.000Z",
+      "endISO": "2025-09-14T03:00:00.000Z"
     }
   ],
   "nextEvent": {
-    "title": "Power FC vs. Lexington FC",
-    "startISO": "2025-09-13T00:00:00.000Z",
-    "endISO": "2025-09-13T00:00:00.000Z",
+    "title": "D.C. United vs. Orlando City SC",
+    "startISO": "2025-09-14T00:30:00.000Z",
+    "endISO": "2025-09-14T03:00:00.000Z",
     "isToday": true
   }
 }
