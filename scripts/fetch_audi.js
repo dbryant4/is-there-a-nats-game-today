@@ -11,36 +11,29 @@
 
 const fs = require('fs');
 const path = require('path');
+const ICAL = require('ical.js');
 
 const AUDI_ICS_URL = 'https://audifield.com/events/?ical=1';
 
 function parseICS(icsText) {
-  const events = [];
-  let current = null;
-  const lines = icsText.split(/\r?\n/);
-  for (let raw of lines) {
-    const line = raw.trim();
-    if (line === 'BEGIN:VEVENT') { current = {}; continue; }
-    if (line === 'END:VEVENT') { if (current) events.push(current); current = null; continue; }
-    if (!current) continue;
-    if (line.startsWith('DTSTART')) { current.start = line.split(':')[1]; }
-    if (line.startsWith('DTEND')) { current.end = line.split(':')[1]; }
-    if (line.startsWith('SUMMARY:')) { current.summary = line.slice('SUMMARY:'.length); }
+  try {
+    // Parse the iCal data using ical.js
+    const jcalData = ICAL.parse(icsText);
+    const comp = new ICAL.Component(jcalData);
+    const vevents = comp.getAllSubcomponents('vevent');
+    
+    return vevents.map(vevent => {
+      const event = new ICAL.Event(vevent);
+      return {
+        title: event.summary || 'Event',
+        startISO: event.startDate ? event.startDate.toJSDate().toISOString() : null,
+        endISO: event.endDate ? event.endDate.toJSDate().toISOString() : null
+      };
+    }).filter(e => e.startISO);
+  } catch (error) {
+    console.error('Error parsing iCal:', error);
+    return [];
   }
-  return events;
-}
-
-function icsDateToISO(dt) {
-  if (!dt) return null;
-  const y = dt.slice(0,4), m = dt.slice(4,6), d = dt.slice(6,8);
-  const hh = dt.slice(9,11) || '00', mm = dt.slice(11,13) || '00';
-  const ss = dt.slice(13,15) || '00';
-  // Audi Field iCal times are in Eastern Time, not UTC
-  // Create a date in ET and convert to ISO
-  const etDate = new Date(`${y}-${m}-${d}T${hh}:${mm}:${ss}`);
-  const utcOffset = -5; // ET is UTC-5 (or -4 during DST, but this is close enough)
-  const utcDate = new Date(etDate.getTime() - (utcOffset * 60 * 60 * 1000));
-  try { return utcDate.toISOString(); } catch { return null; }
 }
 
 function getEasternDateYYYYMMDD(date = new Date()) {
@@ -59,11 +52,7 @@ async function main() {
   const res = await fetch(AUDI_ICS_URL, { cache: 'no-store' });
   if (!res.ok) throw new Error(`Audi iCal fetch failed: ${res.status}`);
   const text = await res.text();
-  const events = parseICS(text).map(e => ({
-    title: e.summary || 'Event',
-    startISO: icsDateToISO(e.start),
-    endISO: icsDateToISO(e.end)
-  })).filter(e => !!e.startISO);
+  const events = parseICS(text);
 
   const todayStr = getEasternDateYYYYMMDD();
   const fmt = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York', year:'numeric', month:'2-digit', day:'2-digit' });

@@ -1,0 +1,16 @@
+{
+  "name": "is-there-a-nats-game-today",
+  "version": "1.0.0",
+  "description": "A minimal static site that shows whether the Washington Nationals play today and whether there are events at Audi Field, with start times in Eastern Time and a quick traffic impact note.",
+  "main": "app.js",
+  "scripts": {
+    "fetch": "node scripts/fetch_nats.js && node scripts/fetch_audi.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ical.js": "^2.2.1"
+  }
+}
