@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2025-09-17T14:23:04.218Z",
+  "lastUpdated": "2025-09-18T04:13:18.154Z",
   "nextEvent": {
-    "isToday": true,
-    "isHome": true,
-    "opponent": "Atlanta Braves",
-    "venue": "Nationals Park",
-    "dateISO": "2025-09-17T20:05:00Z"
+    "isToday": false,
+    "isHome": false,
+    "opponent": "New York Mets",
+    "venue": "Citi Field",
+    "dateISO": "2025-09-19T23:10:00Z"
   }
 }
