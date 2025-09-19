@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2025-09-18T05:11:16.918Z",
-  "eventsToday": [
-    {
-      "title": "Power FC vs. Brooklyn FC",
-      "startISO": "2025-09-18T23:00:00.000Z",
-      "endISO": "2025-09-19T01:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2025-09-19T04:13:18.898Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "Power FC vs. Brooklyn FC",
-    "startISO": "2025-09-18T23:00:00.000Z",
-    "endISO": "2025-09-19T01:00:00.000Z",
-    "isToday": true
+    "title": "P&G Truth and Service Classic - 2025",
+    "startISO": "2025-09-20T20:00:00.000Z",
+    "endISO": "2025-09-20T23:00:00.000Z",
+    "isToday": false
   }
 }
