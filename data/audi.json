@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2025-09-21T05:11:16.397Z",
-  "eventsToday": [
-    {
-      "title": "2025 Inova Blood Drive",
-      "startISO": "2025-09-21T14:00:00.000Z",
-      "endISO": "2025-09-21T18:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2025-09-22T04:13:19.061Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "2025 Inova Blood Drive",
-    "startISO": "2025-09-21T14:00:00.000Z",
-    "endISO": "2025-09-21T18:00:00.000Z",
-    "isToday": true
+    "title": "D.C. United vs. Philadelphia Union",
+    "startISO": "2025-09-27T19:30:00.000Z",
+    "endISO": "2025-09-27T22:00:00.000Z",
+    "isToday": false
   }
 }
