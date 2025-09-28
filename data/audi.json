@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2025-09-27T05:11:24.096Z",
+  "lastUpdated": "2025-09-28T04:13:13.588Z",
   "eventsToday": [
     {
-      "title": "D.C. United vs. Philadelphia Union",
-      "startISO": "2025-09-27T19:30:00.000Z",
-      "endISO": "2025-09-27T22:00:00.000Z"
+      "title": "Washington Spirit vs. Houston Dash",
+      "startISO": "2025-09-28T13:00:00.000Z",
+      "endISO": "2025-09-28T15:30:00.000Z"
     }
   ],
   "nextEvent": {
-    "title": "D.C. United vs. Philadelphia Union",
-    "startISO": "2025-09-27T19:30:00.000Z",
-    "endISO": "2025-09-27T22:00:00.000Z",
+    "title": "Washington Spirit vs. Houston Dash",
+    "startISO": "2025-09-28T13:00:00.000Z",
+    "endISO": "2025-09-28T15:30:00.000Z",
     "isToday": true
   }
 }
