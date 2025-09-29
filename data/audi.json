@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2025-09-28T05:11:10.325Z",
-  "eventsToday": [
-    {
-      "title": "Washington Spirit vs. Houston Dash",
-      "startISO": "2025-09-28T13:00:00.000Z",
-      "endISO": "2025-09-28T15:30:00.000Z"
-    }
-  ],
+  "lastUpdated": "2025-09-29T04:13:15.666Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "Washington Spirit vs. Houston Dash",
-    "startISO": "2025-09-28T13:00:00.000Z",
-    "endISO": "2025-09-28T15:30:00.000Z",
-    "isToday": true
+    "title": "D.C. United vs. Charlotte FC",
+    "startISO": "2025-10-04T14:30:00.000Z",
+    "endISO": "2025-10-04T16:00:00.000Z",
+    "isToday": false
   }
 }
