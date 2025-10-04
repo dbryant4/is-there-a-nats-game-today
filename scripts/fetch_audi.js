@@ -17,8 +17,12 @@ const AUDI_ICS_URL = 'https://audifield.com/events/?ical=1';
 
 function parseICS(icsText) {
   try {
+    // The Audi Field iCal feed incorrectly labels times as TZID=UTC when they're actually
+    // in America/New_York timezone. Fix this before parsing.
+    const fixedIcsText = icsText.replace(/TZID=UTC:/g, 'TZID=America/New_York:');
+    
     // Parse the iCal data using ical.js
-    const jcalData = ICAL.parse(icsText);
+    const jcalData = ICAL.parse(fixedIcsText);
     const comp = new ICAL.Component(jcalData);
     const vevents = comp.getAllSubcomponents('vevent');
     
