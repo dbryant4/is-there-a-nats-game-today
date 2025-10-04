@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2025-10-03T05:11:13.072Z",
-  "eventsToday": [],
+  "lastUpdated": "2025-10-04T04:13:17.374Z",
+  "eventsToday": [
+    {
+      "title": "D.C. United vs. Charlotte FC",
+      "startISO": "2025-10-04T14:30:00.000Z",
+      "endISO": "2025-10-04T16:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "D.C. United vs. Charlotte FC",
     "startISO": "2025-10-04T14:30:00.000Z",
     "endISO": "2025-10-04T16:00:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }
