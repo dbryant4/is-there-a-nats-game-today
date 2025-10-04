@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "fetch": "node scripts/fetch_nats.js && node scripts/fetch_audi.js",
+    "validate": "node scripts/validate_audi_times.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

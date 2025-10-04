@@ -33,6 +33,56 @@ jobs:
       - name: Run data fetch script
         run: bash scripts/fetch_all.sh
 
+      - name: Validate Audi Field times
+        id: validate
+        run: |
+          if node scripts/validate_audi_times.js; then
+            echo "validation_result=success" >> $GITHUB_OUTPUT
+            echo "✅ Validation passed"
+          else
+            echo "validation_result=failed" >> $GITHUB_OUTPUT
+            echo "⚠️ Validation failed"
+          fi
+        continue-on-error: true
+
+      - name: Send email notification on validation failure
+        if: steps.validate.outputs.validation_result == 'failed'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.MAIL_SERVER }}
+          server_port: ${{ secrets.MAIL_PORT }}
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: '⚠️ Audi Field Time Validation Failed'
+          to: ${{ secrets.MAIL_TO }}
+          from: ${{ secrets.MAIL_FROM }}
+          body: |
+            The validation of Audi Field event times has failed during the nightly data update.
+            
+            The times in data/audi.json do not match the times displayed on the Audi Field website.
+            
+            Please review the GitHub Actions logs for details:
+            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            
+            The data has still been committed, but you should investigate whether:
+            - The iCalendar feed has changed format
+            - There are timezone handling issues
+            - The website HTML structure has changed
+            
+            ---
+            Automated notification from: ${{ github.repository }}
+            Run ID: ${{ github.run_id }}
+            Date: ${{ github.event.repository.updated_at }}
+
+      - name: Upload validation artifacts on failure
+        if: steps.validate.outputs.validation_result == 'failed'
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-failure-${{ github.run_id }}
+          path: |
+            data/audi.json
+            data/nats.json
+
       - name: Commit and push changes (if any)
         run: |
           git config user.name "github-actions[bot]"
