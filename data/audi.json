@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2025-10-04T15:28:00.934Z",
+  "lastUpdated": "2025-10-05T04:13:21.990Z",
   "eventsToday": [
     {
-      "title": "D.C. United vs. Charlotte FC",
-      "startISO": "2025-10-04T18:30:00.000Z",
-      "endISO": "2025-10-04T20:00:00.000Z"
+      "title": "Washington Spirit vs. San Diego Wave FC",
+      "startISO": "2025-10-05T17:00:00.000Z",
+      "endISO": "2025-10-05T19:30:00.000Z"
     }
   ],
   "nextEvent": {
-    "title": "D.C. United vs. Charlotte FC",
-    "startISO": "2025-10-04T18:30:00.000Z",
-    "endISO": "2025-10-04T20:00:00.000Z",
+    "title": "Washington Spirit vs. San Diego Wave FC",
+    "startISO": "2025-10-05T17:00:00.000Z",
+    "endISO": "2025-10-05T19:30:00.000Z",
     "isToday": true
   }
 }
