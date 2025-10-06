@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2025-10-05T05:11:09.156Z",
-  "eventsToday": [
-    {
-      "title": "Washington Spirit vs. San Diego Wave FC",
-      "startISO": "2025-10-05T17:00:00.000Z",
-      "endISO": "2025-10-05T19:30:00.000Z"
-    }
-  ],
+  "lastUpdated": "2025-10-06T04:13:42.074Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "Washington Spirit vs. San Diego Wave FC",
-    "startISO": "2025-10-05T17:00:00.000Z",
-    "endISO": "2025-10-05T19:30:00.000Z",
-    "isToday": true
+    "title": "Power FC vs. Sporting JAX",
+    "startISO": "2025-10-14T23:00:00.000Z",
+    "endISO": "2025-10-15T01:00:00.000Z",
+    "isToday": false
   }
 }
