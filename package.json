@@ -4,9 +4,10 @@
   "description": "A minimal static site that shows whether the Washington Nationals play today and whether there are events at Audi Field, with start times in Eastern Time and a quick traffic impact note.",
   "main": "app.js",
   "scripts": {
-    "fetch": "node scripts/fetch_nats.js && node scripts/fetch_audi.js",
+    "fetch": "node scripts/fetch_nats.js && node scripts/fetch_natspark.js && node scripts/fetch_audi.js",
     "validate": "node scripts/validate_audi_times.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node scripts/serve.js"
   },
   "keywords": [],
   "author": "",

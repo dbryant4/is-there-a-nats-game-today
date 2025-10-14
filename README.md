@@ -9,28 +9,43 @@ A minimal static site that shows whether the Washington Nationals play today and
 - No build step, just static files loaded from the same origin
 
 ## Files
-- `index.html` – page markup (two cards: Nationals and Audi Field)
+- `index.html` – page markup (three cards: Nationals, Nationals Park events, Audi Field)
 - `styles.css` – simple styling
 - `app.js` – reads prebuilt JSON from `data/` and renders the view
 - `data/nats.json` – prebuilt JSON with the next Nationals game
 - `data/audi.json` – prebuilt JSON with today’s Audi Field events and the next event
+- `data/natspark.json` – prebuilt JSON with today’s Nationals Park (non‑MLB) events and the next event
 - `scripts/` – Node scripts to fetch and build JSON (`fetch_all.sh`, `fetch_nats.js`, `fetch_audi.js`)
 - `sw.js` – service worker configured to disable caching (no offline)
 
 ## Data Sources (used by build scripts)
 - MLB Stats API (`https://statsapi.mlb.com`) – Washington Nationals team ID: `120`
+- Nationals Park Events page (`https://www.mlb.com/nationals/tickets/events`) – scraped for non‑MLB events
 - Audi Field Events iCal (`https://audifield.com/events/?ical=1`) from the [Audi Field events page](https://audifield.com/events/)
 
 ## Quick Start
-Option A — simple local server with Python 3:
+Option A — Node static server (recommended):
 
 ```bash
 # From the project root
-python3 -m http.server 5173 --directory .
+npm start
 # Then open http://localhost:5173/
 ```
 
-Option B — any static server works (e.g., `npx serve`, `http-server`, Netlify CLI). Just serve the directory and open it in a browser.
+Change the port:
+
+```bash
+PORT=8080 npm start
+# Then open http://localhost:8080/
+```
+
+Option B — simple Python server:
+
+```bash
+python3 -m http.server 5173 --directory .
+```
+
+Option C — any static server works (e.g., `npx serve`, `http-server`, Netlify CLI). Just serve the directory and open it in a browser.
 
 ## Prebuilding data (static JSON)
 Prefetch data and serve as static JSON so the client never calls third-party APIs.
@@ -57,6 +72,16 @@ This creates/updates:
   }
   ```
 - `data/audi.json` with shape:
+ - `data/natspark.json` with shape:
+  ```json
+  {
+    "lastUpdated": "2025-08-11T00:00:00.000Z",
+    "eventsToday": [
+      { "title": "Event Name", "startISO": "2025-08-11T23:00:00Z", "url": "https://www.mlb.com/nationals/tickets/concerts/plaza-stage#souled-out" }
+    ],
+    "nextEvent": { "title": "Next Event", "startISO": "2025-08-14T00:00:00Z", "url": "https://www.mlb.com/nationals/tickets/concerts/plaza-stage#souled-out", "isToday": false }
+  }
+  ```
   ```json
   {
     "lastUpdated": "2025-08-11T00:00:00.000Z",
@@ -75,6 +100,7 @@ The frontend reads only these JSON files from the same origin.
 
 ## How it works
 - The frontend loads `data/nats.json` and `data/audi.json` from the current origin.
+- It also loads `data/natspark.json` for Nationals Park non‑MLB events.
 - Nationals: If `nextEvent.isToday` is true, show it prominently with color (home = red, away = yellow). Otherwise show “No game today” with a subdued “Next game” row.
 - Audi Field: Shows today’s events prominently in red. If none, shows green “No event today” and a subdued “Next event” row.
 - All times displayed in ET.

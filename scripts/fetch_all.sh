@@ -22,14 +22,18 @@ fi
 
 mkdir -p data
 
-echo "[1/2] Fetching Washington Nationals data…"
+echo "[1/3] Fetching Washington Nationals data…"
 node scripts/fetch_nats.js
 
-echo "[2/2] Fetching Audi Field events…"
+echo "[2/3] Fetching Nationals Park (non-MLB) events…"
+node scripts/fetch_natspark.js
+
+echo "[3/3] Fetching Audi Field events…"
 node scripts/fetch_audi.js
 
 echo "Done. Wrote:"
 echo "  $(pwd)/data/nats.json"
+echo "  $(pwd)/data/natspark.json"
 echo "  $(pwd)/data/audi.json"
 
 

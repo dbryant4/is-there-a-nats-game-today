@@ -97,6 +97,17 @@ async function fetchAudiFromStatic() {
   } catch { return { eventsToday: [], nextEvent: null, lastUpdated: null }; }
 }
 
+// Nationals Park (non-MLB) events from static JSON
+
+async function fetchNatsParkFromStatic() {
+  try {
+    const res = await fetch('./data/natspark.json', { cache: 'no-store' });
+    if (!res.ok) return { eventsToday: [], nextEvent: null, lastUpdated: null };
+    const d = await res.json();
+    return { eventsToday: d?.eventsToday || [], nextEvent: d?.nextEvent || null, lastUpdated: d?.lastUpdated || null };
+  } catch { return { eventsToday: [], nextEvent: null, lastUpdated: null }; }
+}
+
 function computeTrafficImpact(isHome) {
   return isHome ? {
     label: 'Higher local traffic expected (home game)',
@@ -155,14 +166,18 @@ function renderError(container, message) {
 
 async function refresh() {
   const natsEl = document.getElementById('nats-app');
+  const natsparkEl = document.getElementById('natspark-app');
   const audiEl = document.getElementById('audi-app');
   natsEl.innerHTML = '<div class="loading">Checking today\'s Nationals schedule…</div>';
+  if (natsparkEl) natsparkEl.innerHTML = '<div class="loading">Checking today\'s Nationals Park events…</div>';
   audiEl.innerHTML = '<div class="loading">Checking today\'s Audi Field events…</div>';
   setCardImpact(natsEl, 'none');
+  if (natsparkEl) setCardImpact(natsparkEl, 'none');
   setCardImpact(audiEl, 'none');
 
-  const [natsData, audiData] = await Promise.all([
+  const [natsData, natsparkData, audiData] = await Promise.all([
     fetchNatsFromStatic(),
+    fetchNatsParkFromStatic(),
     fetchAudiFromStatic(),
   ]);
 
@@ -191,6 +206,69 @@ async function refresh() {
     renderNoGame(natsEl);
     if (natsData && natsData.lastUpdated) {
       natsEl.insertAdjacentHTML('beforeend', `<div class="last-checked">Last checked: ${toEasternDateString(natsData.lastUpdated)} · ${toEasternTimeString(natsData.lastUpdated)}</div>`);
+    }
+  }
+
+  // Nationals Park non-MLB events
+  {
+    const el = natsparkEl;
+    const { eventsToday, nextEvent, lastUpdated } = natsparkData || { eventsToday: [], nextEvent: null, lastUpdated: null };
+    if (!el) {
+      // no container; skip
+    } else if (eventsToday && eventsToday.length > 0) {
+      const first = eventsToday[0];
+      const dateText = first.startISO ? toEasternDateString(first.startISO) : '—';
+      setCardImpact(el, 'danger');
+      let nextBlock = '';
+      if (nextEvent && !nextEvent.isToday && (!first.startISO || nextEvent.startISO !== first.startISO)) {
+        const inDaysRaw = nextEvent.startISO ? daysUntilInET(nextEvent.startISO) : null;
+        const inDaysText = formatInDays(inDaysRaw);
+        nextBlock = `
+          <details class="next">
+            <summary>Next event ${inDaysText ? inDaysText : ''}</summary>
+            <div class="meta">
+              <div><label>Event</label><div>${nextEvent.title}</div></div>
+              ${nextEvent.startISO ? `<div><label>Date</label><div>${toEasternDateString(nextEvent.startISO)}</div></div>` : ''}
+              ${nextEvent.url ? `<div><label>Info</label><div><a href="${nextEvent.url}" target="_blank" rel="noopener noreferrer">More Information</a></div></div>` : ''}
+            </div>
+          </details>
+        `;
+      }
+      el.innerHTML = `
+        <div class="status"><span class="dot danger"></span>Event at Nationals Park</div>
+        <div class="meta">
+          <div><label>Event</label><div>${first.title}</div></div>
+          <div><label>Date</label><div>${dateText}</div></div>
+          ${first.url ? `<div><label>Info</label><div><a class="link-cta" href="${first.url}" target="_blank" rel="noopener noreferrer">More Information</a></div></div>` : ''}
+        </div>
+        ${nextBlock}
+        <div class="detail">Traffic likely higher near the ballpark</div>
+        ${lastUpdated ? `<div class="last-checked">Last checked: ${toEasternDateString(lastUpdated)} · ${toEasternTimeString(lastUpdated)}</div>` : ''}
+      `;
+    } else if (nextEvent) {
+      setCardImpact(el, 'ok');
+      const inDaysRaw = nextEvent.startISO ? daysUntilInET(nextEvent.startISO) : null;
+      const inDaysText = formatInDays(inDaysRaw);
+      el.innerHTML = `
+        <div class="status"><span class="dot ok"></span>No event today</div>
+        ${lastUpdated ? `<div class="last-checked">Last checked: ${toEasternDateString(lastUpdated)} · ${toEasternTimeString(lastUpdated)}</div>` : ''}
+        <div class="detail">Area traffic likely normal.</div>
+        <details class="next">
+          <summary>Next event ${inDaysText ? inDaysText : ''}</summary>
+          <div class="meta">
+            <div><label>Event</label><div>${nextEvent.title}</div></div>
+            ${nextEvent.startISO ? `<div><label>Date</label><div>${toEasternDateString(nextEvent.startISO)}</div></div>` : ''}
+            ${nextEvent.url ? `<div><label>Info</label><div><a class="link-cta" href="${nextEvent.url}" target="_blank" rel="noopener noreferrer">More Information</a></div></div>` : ''}
+          </div>
+        </details>
+      `;
+    } else {
+      setCardImpact(el, 'ok');
+      el.innerHTML = `
+        <div class="status"><span class="dot ok"></span>No event today</div>
+        <div class="detail">Area traffic likely normal.</div>
+        ${lastUpdated ? `<div class="last-checked">Last checked: ${toEasternDateString(lastUpdated)} · ${toEasternTimeString(lastUpdated)}</div>` : ''}
+      `;
     }
   }
 

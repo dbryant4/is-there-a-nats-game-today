@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2025-10-04T15:20:58.099Z",
+  "lastUpdated": "2025-10-14T17:00:59.685Z",
   "eventsToday": [
     {
-      "title": "D.C. United vs. Charlotte FC",
-      "startISO": "2025-10-04T18:30:00.000Z",
-      "endISO": "2025-10-04T20:00:00.000Z"
+      "title": "Power FC vs. Sporting JAX",
+      "startISO": "2025-10-14T23:00:00.000Z",
+      "endISO": "2025-10-15T01:00:00.000Z"
     }
   ],
   "nextEvent": {
-    "title": "D.C. United vs. Charlotte FC",
-    "startISO": "2025-10-04T18:30:00.000Z",
-    "endISO": "2025-10-04T20:00:00.000Z",
+    "title": "Power FC vs. Sporting JAX",
+    "startISO": "2025-10-14T23:00:00.000Z",
+    "endISO": "2025-10-15T01:00:00.000Z",
     "isToday": true
   }
 }

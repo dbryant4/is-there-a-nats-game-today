@@ -234,3 +234,20 @@ details.next[open] > summary::after { content: '▾'; }
 .btn-secondary { background: transparent; }
 
 
+/* Prominent link style for info anchors */
+.link-cta {
+  display: inline-block;
+  color: #d7e6ff;
+  text-decoration: none;
+  font-weight: 700;
+  border: 1px solid rgba(255,255,255,0.28);
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.06);
+}
+.link-cta:hover {
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.45);
+  color: #ffffff;
+}
+
