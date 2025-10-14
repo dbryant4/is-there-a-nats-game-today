@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2025-10-13T05:11:39.972Z",
-  "eventsToday": [],
+  "lastUpdated": "2025-10-14T04:13:30.250Z",
+  "eventsToday": [
+    {
+      "title": "Power FC vs. Sporting JAX",
+      "startISO": "2025-10-14T23:00:00.000Z",
+      "endISO": "2025-10-15T01:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "Power FC vs. Sporting JAX",
     "startISO": "2025-10-14T23:00:00.000Z",
     "endISO": "2025-10-15T01:00:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }
