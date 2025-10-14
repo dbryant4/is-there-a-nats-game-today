@@ -119,9 +119,9 @@ function computeTrafficImpact(isHome) {
 }
 
 function renderNoGame(container) {
-  setCardImpact(container, 'none');
+  setCardImpact(container, 'ok');
   container.innerHTML = `
-    <div class="status"><span class="dot none"></span>No game today</div>
+    <div class="status"><span class="dot ok"></span>No game today</div>
     <div class="detail">Enjoy smoother traffic than usual.</div>
   `;
 }
@@ -190,10 +190,10 @@ async function refresh() {
       }
     } else {
       // Not today: show subdued next event info
-      setCardImpact(natsEl, 'none');
+      setCardImpact(natsEl, 'ok');
       const inDays = formatInDays(daysUntilInET(natsGame.dateISO));
       natsEl.innerHTML = `
-        <div class="status"><span class="dot none"></span>No game today</div>
+        <div class="status"><span class="dot ok"></span>No game today</div>
         <div class="meta">
           <div><label>Next game</label><div>${natsGame.isHome ? 'Home' : 'Away'} ${natsGame.isHome ? 'vs' : 'at'} ${natsGame.opponent}</div></div>
           <div><label>Date</label><div>${toEasternDateString(natsGame.dateISO)} · ${toEasternTimeString(natsGame.dateISO)}</div></div>
