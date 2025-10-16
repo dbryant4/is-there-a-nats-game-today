@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2025-10-15T05:11:23.690Z",
-  "eventsToday": [
-    {
-      "title": "Washington Spirit vs.  CF Monterrey Femenil",
-      "startISO": "2025-10-15T21:15:00.000Z",
-      "endISO": "2025-10-16T00:30:00.000Z"
-    }
-  ],
+  "lastUpdated": "2025-10-16T04:13:49.596Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "Washington Spirit vs.  CF Monterrey Femenil",
-    "startISO": "2025-10-15T21:15:00.000Z",
-    "endISO": "2025-10-16T00:30:00.000Z",
-    "isToday": true
+    "title": "Washington Spirit vs. Orlando Pride",
+    "startISO": "2025-10-18T16:30:00.000Z",
+    "endISO": "2025-10-18T19:00:00.000Z",
+    "isToday": false
   }
 }
