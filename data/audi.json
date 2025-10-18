@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2025-10-17T12:01:49.186Z",
-  "eventsToday": [],
+  "lastUpdated": "2025-10-18T04:13:14.496Z",
+  "eventsToday": [
+    {
+      "title": "Washington Spirit vs. Orlando Pride",
+      "startISO": "2025-10-18T16:30:00.000Z",
+      "endISO": "2025-10-18T19:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "Washington Spirit vs. Orlando Pride",
     "startISO": "2025-10-18T16:30:00.000Z",
     "endISO": "2025-10-18T19:00:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }
