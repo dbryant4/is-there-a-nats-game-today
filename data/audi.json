@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2025-10-18T05:11:15.832Z",
+  "lastUpdated": "2025-10-19T04:13:42.071Z",
   "eventsToday": [
     {
-      "title": "Washington Spirit vs. Orlando Pride",
-      "startISO": "2025-10-18T16:30:00.000Z",
-      "endISO": "2025-10-18T19:00:00.000Z"
+      "title": "Power FC vs. Spokane Zephyr FC",
+      "startISO": "2025-10-19T18:00:00.000Z",
+      "endISO": "2025-10-19T20:00:00.000Z"
     }
   ],
   "nextEvent": {
-    "title": "Washington Spirit vs. Orlando Pride",
-    "startISO": "2025-10-18T16:30:00.000Z",
-    "endISO": "2025-10-18T19:00:00.000Z",
+    "title": "Power FC vs. Spokane Zephyr FC",
+    "startISO": "2025-10-19T18:00:00.000Z",
+    "endISO": "2025-10-19T20:00:00.000Z",
     "isToday": true
   }
 }
