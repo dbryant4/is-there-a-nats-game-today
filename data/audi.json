@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2025-10-19T05:11:30.622Z",
-  "eventsToday": [
-    {
-      "title": "Power FC vs. Spokane Zephyr FC",
-      "startISO": "2025-10-19T18:00:00.000Z",
-      "endISO": "2025-10-19T20:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2025-10-20T04:14:31.887Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "Power FC vs. Spokane Zephyr FC",
-    "startISO": "2025-10-19T18:00:00.000Z",
-    "endISO": "2025-10-19T20:00:00.000Z",
-    "isToday": true
+    "title": "Movies on the Pitch: Hocus Pocus (1993)",
+    "startISO": "2025-10-30T22:00:00.000Z",
+    "endISO": "2025-10-31T01:00:00.000Z",
+    "isToday": false
   }
 }
