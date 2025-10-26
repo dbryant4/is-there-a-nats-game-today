@@ -1,20 +1,10 @@
 {
-  "lastUpdated": "2025-10-25T05:11:10.167Z",
-  "eventsToday": [
-    {
-      "title": "Souled Out Dates: Stadium Status",
-      "startISO": "2025-10-25T08:00:00.000Z",
-      "url": "https://www.mlb.com/nationals/tickets/concerts/plaza-stage#souled-out"
-    },
-    {
-      "title": "Event",
-      "startISO": "2025-10-25T08:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2025-10-26T04:13:23.431Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "Souled Out Dates: Stadium Status",
-    "startISO": "2025-10-25T08:00:00.000Z",
-    "url": "https://www.mlb.com/nationals/tickets/concerts/plaza-stage#souled-out",
-    "isToday": true
+    "title": "Stadium Chef Series at Nationals Park",
+    "startISO": "2025-10-29T08:00:00.000Z",
+    "url": "https://www.mlb.com/nationals/tickets/events/stadium-series",
+    "isToday": false
   }
 }
