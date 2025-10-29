@@ -1,10 +1,20 @@
 {
-  "lastUpdated": "2025-10-28T05:11:30.211Z",
-  "eventsToday": [],
+  "lastUpdated": "2025-10-29T04:14:35.580Z",
+  "eventsToday": [
+    {
+      "title": "Stadium Chef Series at Nationals Park",
+      "startISO": "2025-10-29T08:00:00.000Z",
+      "url": "https://www.mlb.com/nationals/tickets/events/stadium-series"
+    },
+    {
+      "title": "Event",
+      "startISO": "2025-10-29T08:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "Stadium Chef Series at Nationals Park",
     "startISO": "2025-10-29T08:00:00.000Z",
     "url": "https://www.mlb.com/nationals/tickets/events/stadium-series",
-    "isToday": false
+    "isToday": true
   }
 }
