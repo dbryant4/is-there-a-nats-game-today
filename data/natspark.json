@@ -1,20 +1,10 @@
 {
-  "lastUpdated": "2025-10-29T05:11:48.696Z",
-  "eventsToday": [
-    {
-      "title": "Stadium Chef Series at Nationals Park",
-      "startISO": "2025-10-29T08:00:00.000Z",
-      "url": "https://www.mlb.com/nationals/tickets/events/stadium-series"
-    },
-    {
-      "title": "Event",
-      "startISO": "2025-10-29T08:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2025-10-30T04:13:14.015Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "Stadium Chef Series at Nationals Park",
-    "startISO": "2025-10-29T08:00:00.000Z",
-    "url": "https://www.mlb.com/nationals/tickets/events/stadium-series",
-    "isToday": true
+    "title": "DC Beer Fest",
+    "startISO": "2025-11-08T07:00:00.000Z",
+    "url": "https://www.mlb.com/nationals/tickets/events/dc-beer-festival",
+    "isToday": false
   }
 }
