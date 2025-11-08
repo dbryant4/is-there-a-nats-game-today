@@ -1,10 +1,20 @@
 {
-  "lastUpdated": "2025-11-08T04:13:18.506Z",
-  "eventsToday": [],
+  "lastUpdated": "2025-11-08T05:11:15.067Z",
+  "eventsToday": [
+    {
+      "title": "DC Beer Fest",
+      "startISO": "2025-11-08T07:00:00.000Z",
+      "url": "https://www.mlb.com/nationals/tickets/events/dc-beer-festival"
+    },
+    {
+      "title": "Event",
+      "startISO": "2025-11-08T07:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "DC Beer Fest",
     "startISO": "2025-11-08T07:00:00.000Z",
     "url": "https://www.mlb.com/nationals/tickets/events/dc-beer-festival",
-    "isToday": false
+    "isToday": true
   }
 }

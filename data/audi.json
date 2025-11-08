@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2025-11-08T04:13:19.008Z",
-  "eventsToday": [],
+  "lastUpdated": "2025-11-08T05:11:15.458Z",
+  "eventsToday": [
+    {
+      "title": "Washington Spirit vs. Racing Louisville - NWSL Quarterfinals",
+      "startISO": "2025-11-08T17:00:00.000Z",
+      "endISO": "2025-11-08T20:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "Washington Spirit vs. Racing Louisville - NWSL Quarterfinals",
     "startISO": "2025-11-08T17:00:00.000Z",
     "endISO": "2025-11-08T20:00:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }
