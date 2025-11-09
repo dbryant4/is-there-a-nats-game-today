@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2025-11-08T05:11:15.458Z",
-  "eventsToday": [
-    {
-      "title": "Washington Spirit vs. Racing Louisville - NWSL Quarterfinals",
-      "startISO": "2025-11-08T17:00:00.000Z",
-      "endISO": "2025-11-08T20:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2025-11-09T04:13:31.258Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "Washington Spirit vs. Racing Louisville - NWSL Quarterfinals",
-    "startISO": "2025-11-08T17:00:00.000Z",
-    "endISO": "2025-11-08T20:00:00.000Z",
-    "isToday": true
+    "title": "Power FC vs. Fort Lauderdale United FC",
+    "startISO": "2025-11-13T00:00:00.000Z",
+    "endISO": "2025-11-13T02:00:00.000Z",
+    "isToday": false
   }
 }

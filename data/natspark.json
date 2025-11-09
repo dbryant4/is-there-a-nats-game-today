@@ -1,20 +1,10 @@
 {
-  "lastUpdated": "2025-11-08T05:11:15.067Z",
-  "eventsToday": [
-    {
-      "title": "DC Beer Fest",
-      "startISO": "2025-11-08T07:00:00.000Z",
-      "url": "https://www.mlb.com/nationals/tickets/events/dc-beer-festival"
-    },
-    {
-      "title": "Event",
-      "startISO": "2025-11-08T07:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2025-11-09T04:13:30.652Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "DC Beer Fest",
-    "startISO": "2025-11-08T07:00:00.000Z",
-    "url": "https://www.mlb.com/nationals/tickets/events/dc-beer-festival",
-    "isToday": true
+    "title": "Winter Wonderfest at Nationals Park",
+    "startISO": "2025-11-28T07:00:00.000Z",
+    "url": "https://www.mlb.com/nationals/tickets/winterfest",
+    "isToday": false
   }
 }
