@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2025-11-21T04:13:31.722Z",
-  "eventsToday": [],
+  "lastUpdated": "2025-11-21T05:11:22.478Z",
+  "eventsToday": [
+    {
+      "title": "Power FC vs. Carolina Ascent FC",
+      "startISO": "2025-11-22T00:00:00.000Z",
+      "endISO": "2025-11-22T02:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "Power FC vs. Carolina Ascent FC",
     "startISO": "2025-11-22T00:00:00.000Z",
     "endISO": "2025-11-22T02:00:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }
