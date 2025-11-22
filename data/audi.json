@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2025-11-22T04:13:19.288Z",
-  "eventsToday": [],
+  "lastUpdated": "2025-11-22T05:11:14.802Z",
+  "eventsToday": [
+    {
+      "title": "Howard University vs. Norfolk State University",
+      "startISO": "2025-11-22T20:30:00.000Z",
+      "endISO": "2025-11-23T00:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "Howard University vs. Norfolk State University",
     "startISO": "2025-11-22T20:30:00.000Z",
     "endISO": "2025-11-23T00:00:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }
