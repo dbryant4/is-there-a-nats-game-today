@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2025-11-21T05:11:22.478Z",
-  "eventsToday": [
-    {
-      "title": "Power FC vs. Carolina Ascent FC",
-      "startISO": "2025-11-22T00:00:00.000Z",
-      "endISO": "2025-11-22T02:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2025-11-22T04:13:19.288Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "Power FC vs. Carolina Ascent FC",
-    "startISO": "2025-11-22T00:00:00.000Z",
-    "endISO": "2025-11-22T02:00:00.000Z",
-    "isToday": true
+    "title": "Howard University vs. Norfolk State University",
+    "startISO": "2025-11-22T20:30:00.000Z",
+    "endISO": "2025-11-23T00:00:00.000Z",
+    "isToday": false
   }
 }
