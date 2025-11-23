@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2025-11-22T05:11:14.802Z",
-  "eventsToday": [
-    {
-      "title": "Howard University vs. Norfolk State University",
-      "startISO": "2025-11-22T20:30:00.000Z",
-      "endISO": "2025-11-23T00:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2025-11-23T04:19:45.323Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "Howard University vs. Norfolk State University",
-    "startISO": "2025-11-22T20:30:00.000Z",
-    "endISO": "2025-11-23T00:00:00.000Z",
-    "isToday": true
+    "title": "D.C. United vs. Philadelphia Union",
+    "startISO": "2026-02-22T00:30:00.000Z",
+    "endISO": "2026-02-22T03:00:00.000Z",
+    "isToday": false
   }
 }
