@@ -1,10 +1,20 @@
 {
-  "lastUpdated": "2025-11-28T04:13:27.829Z",
-  "eventsToday": [],
+  "lastUpdated": "2025-11-28T05:11:30.249Z",
+  "eventsToday": [
+    {
+      "title": "Winter Wonderfest at Nationals Park",
+      "startISO": "2025-11-28T07:00:00.000Z",
+      "url": "https://www.mlb.com/nationals/tickets/winterfest"
+    },
+    {
+      "title": "Event",
+      "startISO": "2025-11-28T07:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "Winter Wonderfest at Nationals Park",
     "startISO": "2025-11-28T07:00:00.000Z",
     "url": "https://www.mlb.com/nationals/tickets/winterfest",
-    "isToday": false
+    "isToday": true
   }
 }
