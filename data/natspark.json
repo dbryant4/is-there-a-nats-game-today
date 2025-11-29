@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-28T05:11:30.249Z",
+  "lastUpdated": "2025-11-29T04:13:16.853Z",
   "eventsToday": [
     {
       "title": "Winter Wonderfest at Nationals Park",
@@ -12,9 +12,9 @@
     }
   ],
   "nextEvent": {
-    "title": "Winter Wonderfest at Nationals Park",
-    "startISO": "2025-11-28T07:00:00.000Z",
-    "url": "https://www.mlb.com/nationals/tickets/winterfest",
-    "isToday": true
+    "title": "FOO FIGHTERS: TAKE COVER TOUR 2026",
+    "startISO": "2026-08-17T08:00:00.000Z",
+    "url": "https://www.mlb.com/nationals/tickets/concerts/foo-fighters",
+    "isToday": false
   }
 }
