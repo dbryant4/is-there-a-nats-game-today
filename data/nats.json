@@ -1,4 +1,10 @@
 {
-  "lastUpdated": "2025-12-23T04:22:50.315Z",
-  "nextEvent": null
+  "lastUpdated": "2025-12-23T05:13:07.700Z",
+  "nextEvent": {
+    "isToday": false,
+    "isHome": false,
+    "opponent": "St. Louis Cardinals",
+    "venue": "Roger Dean Chevrolet Stadium",
+    "dateISO": "2026-02-21T18:05:00Z"
+  }
 }
