@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-01-08T05:13:41.871Z",
+  "lastUpdated": "2026-01-09T04:25:48.188Z",
   "nextEvent": {
     "isToday": false,
-    "isHome": false,
-    "opponent": "St. Louis Cardinals",
-    "venue": "Roger Dean Chevrolet Stadium",
+    "isHome": true,
+    "opponent": "Houston Astros",
+    "venue": "CACTI Park of the Palm Beaches",
     "dateISO": "2026-02-21T18:05:00Z"
   }
 }
