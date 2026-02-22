@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-22T04:43:12.133Z",
+  "lastUpdated": "2026-02-22T05:30:48.962Z",
   "nextEvent": {
     "isToday": true,
-    "isHome": true,
-    "opponent": "Houston Astros",
-    "venue": "CACTI Park of the Palm Beaches",
-    "dateISO": "2026-02-21T18:05:00Z"
+    "isHome": false,
+    "opponent": "Miami Marlins",
+    "venue": "Roger Dean Chevrolet Stadium",
+    "dateISO": "2026-02-22T18:10:00Z"
   }
 }
