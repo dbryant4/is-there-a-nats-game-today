@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-27T04:42:21.313Z",
+  "lastUpdated": "2026-02-27T05:30:20.752Z",
   "nextEvent": {
     "isToday": true,
-    "isHome": false,
-    "opponent": "Philadelphia Phillies",
-    "venue": "BayCare Ballpark",
-    "dateISO": "2026-02-26T18:05:00Z"
+    "isHome": true,
+    "opponent": "Houston Astros",
+    "venue": "CACTI Park of the Palm Beaches",
+    "dateISO": "2026-02-27T23:05:00Z"
   }
 }
