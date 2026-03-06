@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-03-06T04:41:36.654Z",
+  "lastUpdated": "2026-03-06T05:27:12.700Z",
   "nextEvent": {
     "isToday": true,
-    "isHome": true,
-    "opponent": "New York Mets",
+    "isHome": false,
+    "opponent": "Houston Astros",
     "venue": "CACTI Park of the Palm Beaches",
-    "dateISO": "2026-03-05T18:05:00Z"
+    "dateISO": "2026-03-06T18:05:00Z"
   }
 }
