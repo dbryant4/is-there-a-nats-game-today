@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-03-11T05:28:25.339Z",
+  "lastUpdated": "2026-03-12T04:42:51.408Z",
   "nextEvent": {
     "isToday": true,
-    "isHome": true,
-    "opponent": "St. Louis Cardinals",
+    "isHome": false,
+    "opponent": "Houston Astros",
     "venue": "CACTI Park of the Palm Beaches",
-    "dateISO": "2026-03-11T17:05:00Z"
+    "dateISO": "2026-03-12T22:05:00Z"
   }
 }
