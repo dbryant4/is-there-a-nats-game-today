@@ -1,20 +1,10 @@
 {
-  "lastUpdated": "2026-03-17T05:35:01.289Z",
-  "eventsToday": [
-    {
-      "title": "The Congressional Football Game",
-      "startISO": "2026-03-17T08:00:00.000Z",
-      "url": "https://www.mlb.com/nationals/tickets/specials/congressional-football"
-    },
-    {
-      "title": "Event",
-      "startISO": "2026-03-17T08:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-03-18T04:47:50.533Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "The Congressional Football Game",
-    "startISO": "2026-03-17T08:00:00.000Z",
-    "url": "https://www.mlb.com/nationals/tickets/specials/congressional-football",
-    "isToday": true
+    "title": "DC Beer Fest",
+    "startISO": "2026-04-11T08:00:00.000Z",
+    "url": "https://www.mlb.com/nationals/tickets/events/dc-beer-festival",
+    "isToday": false
   }
 }
