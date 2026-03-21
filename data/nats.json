@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-03-20T05:30:34.845Z",
+  "lastUpdated": "2026-03-21T04:40:31.330Z",
   "nextEvent": {
     "isToday": true,
-    "isHome": false,
-    "opponent": "Miami Marlins",
-    "venue": "Roger Dean Chevrolet Stadium",
-    "dateISO": "2026-03-20T23:10:00Z"
+    "isHome": true,
+    "opponent": "New York Mets",
+    "venue": "CACTI Park of the Palm Beaches",
+    "dateISO": "2026-03-21T17:05:00Z"
   }
 }
