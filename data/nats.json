@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-03-21T05:25:36.440Z",
+  "lastUpdated": "2026-03-22T04:45:01.923Z",
   "nextEvent": {
     "isToday": true,
-    "isHome": true,
-    "opponent": "New York Mets",
-    "venue": "CACTI Park of the Palm Beaches",
-    "dateISO": "2026-03-21T17:05:00Z"
+    "isHome": false,
+    "opponent": "Baltimore Orioles",
+    "venue": "Oriole Park at Camden Yards",
+    "dateISO": "2026-03-22T17:35:00Z"
   }
 }
