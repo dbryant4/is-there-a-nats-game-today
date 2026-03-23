@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-03-22T05:32:25.172Z",
+  "lastUpdated": "2026-03-23T04:52:59.291Z",
   "nextEvent": {
     "isToday": true,
-    "isHome": false,
+    "isHome": true,
     "opponent": "Baltimore Orioles",
-    "venue": "Oriole Park at Camden Yards",
-    "dateISO": "2026-03-22T17:35:00Z"
+    "venue": "Nationals Park",
+    "dateISO": "2026-03-23T17:05:00Z"
   }
 }
