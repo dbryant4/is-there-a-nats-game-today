@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-03-26T05:39:50.140Z",
+  "lastUpdated": "2026-03-27T04:55:44.546Z",
   "nextEvent": {
-    "isToday": true,
+    "isToday": false,
     "isHome": false,
     "opponent": "Chicago Cubs",
     "venue": "Wrigley Field",
-    "dateISO": "2026-03-26T18:20:00Z"
+    "dateISO": "2026-03-28T18:20:00Z"
   }
 }
