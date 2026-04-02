@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-01T05:46:43.729Z",
+  "lastUpdated": "2026-04-02T04:52:57.398Z",
   "nextEvent": {
-    "isToday": true,
-    "isHome": false,
-    "opponent": "Philadelphia Phillies",
-    "venue": "Citizens Bank Park",
-    "dateISO": "2026-04-01T17:05:00Z"
+    "isToday": false,
+    "isHome": true,
+    "opponent": "Los Angeles Dodgers",
+    "venue": "Nationals Park",
+    "dateISO": "2026-04-03T17:05:00Z"
   }
 }
