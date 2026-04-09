@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-08T05:41:35.917Z",
+  "lastUpdated": "2026-04-09T04:56:19.283Z",
   "nextEvent": {
-    "isToday": true,
-    "isHome": true,
-    "opponent": "St. Louis Cardinals",
-    "venue": "Nationals Park",
-    "dateISO": "2026-04-08T20:05:00Z"
+    "isToday": false,
+    "isHome": false,
+    "opponent": "Milwaukee Brewers",
+    "venue": "American Family Field",
+    "dateISO": "2026-04-10T23:40:00Z"
   }
 }
