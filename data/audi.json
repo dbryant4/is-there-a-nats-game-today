@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2026-04-10T05:48:55.241Z",
-  "eventsToday": [],
+  "lastUpdated": "2026-04-11T04:46:09.882Z",
+  "eventsToday": [
+    {
+      "title": "DC Defenders vs. Houston Gamblers",
+      "startISO": "2026-04-11T15:00:00.000Z",
+      "endISO": "2026-04-11T19:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "DC Defenders vs. Houston Gamblers",
     "startISO": "2026-04-11T15:00:00.000Z",
     "endISO": "2026-04-11T19:00:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }
