@@ -1,20 +1,10 @@
 {
-  "lastUpdated": "2026-04-11T05:36:38.587Z",
-  "eventsToday": [
-    {
-      "title": "DC Beer Fest",
-      "startISO": "2026-04-11T08:00:00.000Z",
-      "url": "https://www.mlb.com/nationals/tickets/events/dc-beer-festival"
-    },
-    {
-      "title": "Event",
-      "startISO": "2026-04-11T08:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-04-12T05:05:51.302Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "DC Beer Fest",
-    "startISO": "2026-04-11T08:00:00.000Z",
-    "url": "https://www.mlb.com/nationals/tickets/events/dc-beer-festival",
-    "isToday": true
+    "title": "Uncorked",
+    "startISO": "2026-04-25T08:00:00.000Z",
+    "url": "https://www.mlb.com/nationals/tickets/events/uncorked",
+    "isToday": false
   }
 }
