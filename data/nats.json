@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-16T05:50:16.029Z",
+  "lastUpdated": "2026-04-17T05:08:51.504Z",
   "nextEvent": {
     "isToday": true,
-    "isHome": false,
-    "opponent": "Pittsburgh Pirates",
-    "venue": "PNC Park",
-    "dateISO": "2026-04-16T16:35:00Z"
+    "isHome": true,
+    "opponent": "San Francisco Giants",
+    "venue": "Nationals Park",
+    "dateISO": "2026-04-17T22:45:00Z"
   }
 }
