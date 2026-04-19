@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2026-04-18T05:39:53.982Z",
-  "eventsToday": [
-    {
-      "title": "DC Defenders vs. St. Louis Battlehawks",
-      "startISO": "2026-04-18T15:30:00.000Z",
-      "endISO": "2026-04-18T19:30:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-04-19T05:09:18.449Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "DC Defenders vs. St. Louis Battlehawks",
-    "startISO": "2026-04-18T15:30:00.000Z",
-    "endISO": "2026-04-18T19:30:00.000Z",
-    "isToday": true
+    "title": "Washington Spirit vs. Kansas City Current",
+    "startISO": "2026-04-25T00:00:00.000Z",
+    "endISO": "2026-04-25T03:00:00.000Z",
+    "isToday": false
   }
 }
