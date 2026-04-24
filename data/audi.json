@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2026-04-23T05:51:46.464Z",
-  "eventsToday": [],
+  "lastUpdated": "2026-04-24T05:11:21.003Z",
+  "eventsToday": [
+    {
+      "title": "Washington Spirit vs. Kansas City Current",
+      "startISO": "2026-04-25T00:00:00.000Z",
+      "endISO": "2026-04-25T03:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "Washington Spirit vs. Kansas City Current",
     "startISO": "2026-04-25T00:00:00.000Z",
     "endISO": "2026-04-25T03:00:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }

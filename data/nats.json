@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-23T05:51:44.758Z",
+  "lastUpdated": "2026-04-24T05:11:19.549Z",
   "nextEvent": {
     "isToday": true,
-    "isHome": true,
-    "opponent": "Atlanta Braves",
-    "venue": "Nationals Park",
-    "dateISO": "2026-04-23T17:05:00Z"
+    "isHome": false,
+    "opponent": "Chicago White Sox",
+    "venue": "Rate Field",
+    "dateISO": "2026-04-24T23:40:00Z"
   }
 }
