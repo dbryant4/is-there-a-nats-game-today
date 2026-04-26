@@ -1,20 +1,10 @@
 {
-  "lastUpdated": "2026-04-25T05:41:46.772Z",
-  "eventsToday": [
-    {
-      "title": "Uncorked",
-      "startISO": "2026-04-25T08:00:00.000Z",
-      "url": "https://www.mlb.com/nationals/tickets/events/uncorked"
-    },
-    {
-      "title": "Event",
-      "startISO": "2026-04-25T08:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-04-26T05:11:07.990Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "Uncorked",
-    "startISO": "2026-04-25T08:00:00.000Z",
-    "url": "https://www.mlb.com/nationals/tickets/events/uncorked",
-    "isToday": true
+    "title": "ADOBO DAY PARTY",
+    "startISO": "2026-05-09T08:00:00.000Z",
+    "url": "https://www.mlb.com/nationals/tickets/concerts/adobo",
+    "isToday": false
   }
 }
