@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-26T05:54:56.002Z",
+  "lastUpdated": "2026-04-27T05:14:51.660Z",
   "nextEvent": {
-    "isToday": true,
+    "isToday": false,
     "isHome": false,
-    "opponent": "Chicago White Sox",
-    "venue": "Rate Field",
-    "dateISO": "2026-04-26T18:10:00Z"
+    "opponent": "New York Mets",
+    "venue": "Citi Field",
+    "dateISO": "2026-04-28T23:10:00Z"
   }
 }
