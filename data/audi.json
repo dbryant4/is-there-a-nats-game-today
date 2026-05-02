@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2026-05-01T06:10:28.767Z",
+  "lastUpdated": "2026-05-02T05:11:37.328Z",
   "eventsToday": [
     {
-      "title": "DC Power FC vs. Dallas Trinity FC",
-      "startISO": "2026-05-01T23:00:00.000Z",
-      "endISO": "2026-05-02T01:00:00.000Z"
+      "title": "DC Defenders vs. Dallas Renegades",
+      "startISO": "2026-05-02T15:00:00.000Z",
+      "endISO": "2026-05-02T19:00:00.000Z"
     }
   ],
   "nextEvent": {
-    "title": "DC Power FC vs. Dallas Trinity FC",
-    "startISO": "2026-05-01T23:00:00.000Z",
-    "endISO": "2026-05-02T01:00:00.000Z",
+    "title": "DC Defenders vs. Dallas Renegades",
+    "startISO": "2026-05-02T15:00:00.000Z",
+    "endISO": "2026-05-02T19:00:00.000Z",
     "isToday": true
   }
 }
