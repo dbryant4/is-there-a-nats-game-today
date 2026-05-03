@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2026-05-02T05:53:12.295Z",
-  "eventsToday": [
-    {
-      "title": "DC Defenders vs. Dallas Renegades",
-      "startISO": "2026-05-02T15:00:00.000Z",
-      "endISO": "2026-05-02T19:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-05-03T05:16:43.610Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "DC Defenders vs. Dallas Renegades",
-    "startISO": "2026-05-02T15:00:00.000Z",
-    "endISO": "2026-05-02T19:00:00.000Z",
-    "isToday": true
+    "title": "DC Power FC vs. Sporting Jax",
+    "startISO": "2026-05-06T21:30:00.000Z",
+    "endISO": "2026-05-07T01:00:00.000Z",
+    "isToday": false
   }
 }
