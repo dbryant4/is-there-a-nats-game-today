@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-05-03T06:08:11.577Z",
+  "lastUpdated": "2026-05-04T05:19:03.716Z",
   "nextEvent": {
-    "isToday": true,
+    "isToday": false,
     "isHome": true,
-    "opponent": "Milwaukee Brewers",
+    "opponent": "Minnesota Twins",
     "venue": "Nationals Park",
-    "dateISO": "2026-05-03T17:35:00Z"
+    "dateISO": "2026-05-05T22:45:00Z"
   }
 }
