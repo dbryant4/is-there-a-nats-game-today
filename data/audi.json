@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2026-05-05T05:59:16.630Z",
-  "eventsToday": [],
+  "lastUpdated": "2026-05-06T05:14:51.910Z",
+  "eventsToday": [
+    {
+      "title": "DC Power FC vs. Sporting Jax",
+      "startISO": "2026-05-06T21:30:00.000Z",
+      "endISO": "2026-05-07T01:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "DC Power FC vs. Sporting Jax",
     "startISO": "2026-05-06T21:30:00.000Z",
     "endISO": "2026-05-07T01:00:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }
