@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2026-05-06T06:08:24.226Z",
-  "eventsToday": [
-    {
-      "title": "DC Power FC vs. Sporting Jax",
-      "startISO": "2026-05-06T21:30:00.000Z",
-      "endISO": "2026-05-07T01:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-05-07T05:17:19.366Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "DC Power FC vs. Sporting Jax",
-    "startISO": "2026-05-06T21:30:00.000Z",
-    "endISO": "2026-05-07T01:00:00.000Z",
-    "isToday": true
+    "title": "DC Defenders vs. Louisville Kings",
+    "startISO": "2026-05-09T17:30:00.000Z",
+    "endISO": "2026-05-09T20:30:00.000Z",
+    "isToday": false
   }
 }
