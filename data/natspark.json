@@ -1,20 +1,10 @@
 {
-  "lastUpdated": "2026-05-09T06:01:04.117Z",
-  "eventsToday": [
-    {
-      "title": "ADOBO DAY PARTY",
-      "startISO": "2026-05-09T08:00:00.000Z",
-      "url": "https://www.mlb.com/nationals/tickets/concerts/adobo"
-    },
-    {
-      "title": "Event",
-      "startISO": "2026-05-09T08:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-05-10T05:21:41.550Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "ADOBO DAY PARTY",
-    "startISO": "2026-05-09T08:00:00.000Z",
-    "url": "https://www.mlb.com/nationals/tickets/concerts/adobo",
-    "isToday": true
+    "title": "Bruce Springsteen &amp; The E Street Band",
+    "startISO": "2026-05-27T08:00:00.000Z",
+    "url": "https://www.mlb.com/nationals/tickets/concerts/springsteen",
+    "isToday": false
   }
 }
