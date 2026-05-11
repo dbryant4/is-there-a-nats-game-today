@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-05-10T06:09:41.204Z",
+  "lastUpdated": "2026-05-11T05:29:52.103Z",
   "nextEvent": {
-    "isToday": true,
+    "isToday": false,
     "isHome": false,
-    "opponent": "Miami Marlins",
-    "venue": "loanDepot park",
-    "dateISO": "2026-05-10T16:15:00Z"
+    "opponent": "Cincinnati Reds",
+    "venue": "Great American Ball Park",
+    "dateISO": "2026-05-12T22:40:00Z"
   }
 }
