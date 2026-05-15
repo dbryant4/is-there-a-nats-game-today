@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-05-14T06:11:56.210Z",
+  "lastUpdated": "2026-05-15T05:27:44.669Z",
   "nextEvent": {
     "isToday": true,
-    "isHome": false,
-    "opponent": "Cincinnati Reds",
-    "venue": "Great American Ball Park",
-    "dateISO": "2026-05-14T16:40:00Z"
+    "isHome": true,
+    "opponent": "Baltimore Orioles",
+    "venue": "Nationals Park",
+    "dateISO": "2026-05-15T22:45:00Z"
   }
 }
