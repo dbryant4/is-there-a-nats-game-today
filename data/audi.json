@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2026-05-23T06:10:07.211Z",
-  "eventsToday": [
-    {
-      "title": "D.C. United vs. CF Montréal",
-      "startISO": "2026-05-23T23:30:00.000Z",
-      "endISO": "2026-05-24T02:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-05-24T05:29:54.642Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "D.C. United vs. CF Montréal",
-    "startISO": "2026-05-23T23:30:00.000Z",
-    "endISO": "2026-05-24T02:00:00.000Z",
-    "isToday": true
+    "title": "Washington Spirit vs. Seattle Reign FC",
+    "startISO": "2026-05-30T22:30:00.000Z",
+    "endISO": "2026-05-31T01:30:00.000Z",
+    "isToday": false
   }
 }
