@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2026-05-29T06:32:28.994Z",
-  "eventsToday": [],
+  "lastUpdated": "2026-05-30T05:26:41.097Z",
+  "eventsToday": [
+    {
+      "title": "Washington Spirit vs. Seattle Reign FC",
+      "startISO": "2026-05-30T22:30:00.000Z",
+      "endISO": "2026-05-31T01:30:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "Washington Spirit vs. Seattle Reign FC",
     "startISO": "2026-05-30T22:30:00.000Z",
     "endISO": "2026-05-31T01:30:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }
