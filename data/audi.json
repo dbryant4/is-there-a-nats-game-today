@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2026-05-31T06:33:45.291Z",
-  "eventsToday": [
-    {
-      "title": "DC Defenders vs. Orlando Storm",
-      "startISO": "2026-05-31T16:00:00.000Z",
-      "endISO": "2026-05-31T19:30:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-06-01T05:49:43.229Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "DC Defenders vs. Orlando Storm",
-    "startISO": "2026-05-31T16:00:00.000Z",
-    "endISO": "2026-05-31T19:30:00.000Z",
-    "isToday": true
+    "title": "2026 United Bowl - UFL Championship",
+    "startISO": "2026-06-13T19:00:00.000Z",
+    "endISO": "2026-06-13T22:30:00.000Z",
+    "isToday": false
   }
 }
