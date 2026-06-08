@@ -82,6 +82,7 @@ jobs:
           path: |
             data/audi.json
             data/nats.json
+            VERSION
 
       - name: Commit and push changes (if any)
         run: |

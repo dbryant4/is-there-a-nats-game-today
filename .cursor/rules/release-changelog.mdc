@@ -1,0 +1,114 @@
+---
+description: GitHub release notes must follow Keep a Changelog format (emoji headings, all sections)
+alwaysApply: false
+---
+
+# Release changelog (Keep a Changelog)
+
+**Read this rule before** `gh release create` or when the user asks for a commit
+ + GitHub release.
+
+Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) — semantic version tags (`v1.2.0`), present tense (“Add”, not “Added”).
+
+## Title
+
+```
+vX.Y.Z — short human summary (≤ ~60 chars)
+```
+
+## Required sections (in order)
+
+**Include every heading below in every release.** When a section has no items, write `_None in this release._` under that heading — do not omit headings.
+
+| Heading | Keep a Changelog type | Contents |
+|--------|------------------------|----------|
+| **Overview** | — | 1–3 sentences: version, theme, who should care |
+| **✨ Features** | Added | New routes, profile fields |
+| **🔧 Enhancements** | Changed | Improvements to existing behaviour (non-breaking) |
+| **🐛 Bug Fixes** | Fixed | Bug fixes |
+| **⚠️ Breaking Changes** | Removed / breaking Changed | Major bumps only; migration path |
+| **🔒 Security** | Security | Auth/IAM changes (rare) |
+| **📦 Infrastructure** | Changed (infra) | CDK, IAM, Lambda env, Cognito grants |
+| **🧪 Testing** | — | New/changed tests |
+| **📚 Documentation** | — | README, PRD, OpenAPI |
+| **⬆️ Upgrade notes** | — | Numbered deploy / consumer steps |
+| **🔗 Full changelog** | — | Compare link |
+
+Separate **Overview** from emoji sections with `---`. Separate **Upgrade notes** from **Full changelog** with `---`.
+
+Compare URL: `https://github.com/dbryant4/mealr-account-api/compare/vPREV...vNEW`
+
+Full changelog line format: **`vPREV → vX.Y.Z`** ([compare](…))
+
+## Writing rules
+
+- Bullet lists; one change per bullet; lead with the **what**, then brief **why** if non-obvious.
+- Reference **`VERSION`**, **`openapi/openapi.yaml`** `info.version`, and env vars when relevant.
+- **Upgrade notes** must include **`./scripts/cdk.sh deploy`** (or venv `cdk deploy`) when Lambdas or IAM change; redeploy **mealr-api-gateway** when **`ApiId`** export or routing docs change.
+- Align release version with **`VERSION`**, **`openapi/openapi.yaml`**, and **`semver-version.mdc`**.
+- Do **not** edit past GitHub release bodies unless the user explicitly asks — add a patch release instead.
+
+## `gh release create` template
+
+```bash
+gh release create vX.Y.Z \
+  --title "vX.Y.Z — short summary" \
+  --notes "$(cat <<'EOF'
+## Overview
+
+One to three sentences.
+
+---
+
+## ✨ Features
+
+- …
+
+## 🔧 Enhancements
+
+- …
+
+## 🐛 Bug Fixes
+
+_None in this release._
+
+## ⚠️ Breaking Changes
+
+_None in this release._
+
+## 🔒 Security
+
+_None in this release._
+
+## 📦 Infrastructure
+
+- …
+
+## 🧪 Testing
+
+_None in this release._
+
+## 📚 Documentation
+
+_None in this release._
+
+## ⬆️ Upgrade notes
+
+1. Bump **`VERSION`** to **X.Y.Z** (already tagged).
+2. `./scripts/cdk.sh deploy`
+3. Redeploy **mealr-api-gateway** if `/account` mapping or `AccountApiId` wiring changed.
+
+---
+
+## 🔗 Full changelog
+
+**vPREV → vX.Y.Z** ([compare](https://github.com/dbryant4/mealr-account-api/compare/vPREV...vX.Y.Z))
+EOF
+)"
+```
+
+## Do not
+
+- Ship a release without a compare link or upgrade notes when deploy is required.
+- Use marketing fluff without concrete bullets.
+- Duplicate the entire PR description — release notes are for **operators and API consumers**, not code review.

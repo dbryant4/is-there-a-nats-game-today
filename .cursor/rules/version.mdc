@@ -1,0 +1,10 @@
+---
+description: Keep the app version metadata in sync across VERSION, package.json, README, and the app UI
+alwaysApply: true
+---
+
+# Version synchronization
+
+- Use `VERSION` as the single source of truth for the application version.
+- Keep `package.json.version`, `README.md`, and the in-app version display consistent with `VERSION`.
+- When bumping the app version, update `VERSION` first and then verify the UI and documentation are current.

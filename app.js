@@ -99,6 +99,8 @@ async function fetchAudiFromStatic() {
 
 // Nationals Park (non-MLB) events from static JSON
 
+const VERSION_FILE = './VERSION';
+
 async function fetchNatsParkFromStatic() {
   try {
     const res = await fetch('./data/natspark.json', { cache: 'no-store' });
@@ -106,6 +108,22 @@ async function fetchNatsParkFromStatic() {
     const d = await res.json();
     return { eventsToday: d?.eventsToday || [], nextEvent: d?.nextEvent || null, lastUpdated: d?.lastUpdated || null };
   } catch { return { eventsToday: [], nextEvent: null, lastUpdated: null }; }
+}
+
+async function fetchAppVersion() {
+  try {
+    const res = await fetch(VERSION_FILE, { cache: 'no-store' });
+    if (!res.ok) throw new Error('Version file missing');
+    return (await res.text()).trim();
+  } catch {
+    return null;
+  }
+}
+
+function renderAppVersion(version) {
+  const el = document.getElementById('appVersion');
+  if (!el) return;
+  el.textContent = version ? `Version ${version}` : 'Version unknown';
 }
 
 function computeTrafficImpact(isHome) {
@@ -174,6 +192,9 @@ async function refresh() {
   setCardImpact(natsEl, 'none');
   if (natsparkEl) setCardImpact(natsparkEl, 'none');
   setCardImpact(audiEl, 'none');
+
+  const appVersion = await fetchAppVersion();
+  renderAppVersion(appVersion);
 
   const [natsData, natsparkData, audiData] = await Promise.all([
     fetchNatsFromStatic(),

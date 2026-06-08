@@ -1,5 +1,7 @@
 # Is There a Game Today Near Navy Yard?
 
+**Version:** `1.0.0`
+
 **👉 [View the live app](https://dbryant4.github.io/is-there-a-nats-game-today/)**
 
 [![Live App](https://img.shields.io/badge/Live%20App-dbryant4.github.io-AB0003?style=for-the-badge&logo=githubpages&logoColor=white)](https://dbryant4.github.io/is-there-a-nats-game-today/)
