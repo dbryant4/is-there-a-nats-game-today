@@ -1,0 +1,54 @@
+---
+description: Navy Yard games app architecture, data flow, and domain rules
+alwaysApply: true
+---
+
+# Navy Yard Games App
+
+Static site showing Washington Nationals games, Nationals Park events, and Audi Field events with traffic impact indicators.
+
+## Data Flow
+
+1. Build scripts (`scripts/fetch_*.js`) fetch data from APIs
+2. Data is saved as static JSON in `data/`
+3. Frontend (`app.js`) reads only local JSON — no browser API calls
+
+## Key Files
+
+- `index.html` — single-page entry point
+- `app.js` — frontend logic, reads `data/*.json`
+- `styles.css` — styling via CSS custom properties
+- `data/` — prebuilt JSON (`nats.json`, `audi.json`, `natspark.json`)
+- `scripts/` — Node build scripts for fetching data
+- `icons/` — SVG icons and PWA assets
+
+## Time Zones
+
+- Store times as UTC in JSON; display in Eastern Time (`America/New_York`)
+- Handle DST transitions automatically
+
+## Traffic Impact Colors
+
+- Home games/events = red (high impact)
+- Away games = yellow (moderate impact)
+- No events = green (low impact)
+- Use consistent color coding across all cards
+
+## PWA
+
+- Service worker disables caching for fresh data
+- Manifest supports home screen installation
+- Icons use "DC" branding
+
+## Build & Deploy
+
+- Run `npm run fetch` or `./scripts/fetch_all.sh` to update data
+- No compilation — serve static files directly
+- Deploy to any static host (GitHub Pages, Netlify, etc.)
+
+## Data Sources
+
+- MLB Stats API for Nationals games (team ID 120)
+- Nationals Park events page for non-MLB events
+- Audi Field iCal feed (`ical.js` for parsing)
+- Handle API failures gracefully with fallback messaging

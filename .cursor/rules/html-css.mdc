@@ -1,0 +1,36 @@
+---
+description: HTML and CSS conventions for the static frontend
+globs: **/*.{html,css}
+alwaysApply: false
+---
+
+# HTML & CSS
+
+## HTML
+
+- Semantic HTML5 (`main`, `section`, `header`, `footer`)
+- Meaningful `id`/`class` names describing content, not appearance
+- SEO meta tags and `aria-*` attributes where needed
+- Proper heading hierarchy (single `h1`, then `h2`, `h3`…)
+
+## CSS
+
+- CSS custom properties for theming and color schemes
+- Mobile-first responsive design; flexbox and grid for layout
+- Keep specificity low; avoid deep nesting
+- Group related styles together
+
+## Accessibility
+
+- Sufficient color contrast; visible focus styles for keyboard nav
+- Alt text on images; test keyboard-only navigation
+
+## Performance
+
+- `preconnect` for external fonts/resources
+- Small, focused CSS file; optimize critical rendering path
+
+## Progressive Enhancement
+
+- Core content readable without JavaScript
+- Dark mode via CSS custom properties; respect system preferences when possible

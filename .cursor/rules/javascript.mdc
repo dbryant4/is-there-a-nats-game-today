@@ -1,0 +1,46 @@
+---
+description: JavaScript style and patterns for app.js and build scripts
+globs: **/*.js
+alwaysApply: false
+---
+
+# JavaScript
+
+## Style
+
+- 2-space indentation, single quotes, semicolons
+- Prefer `const` over `let`; avoid `var`
+- Trailing commas in multi-line objects and arrays
+- Small, single-purpose functions; prefer functional patterns
+
+## Error Handling
+
+```javascript
+// ✅ Return defaults for expected failures; log for debugging
+try {
+  const data = await fetch(url);
+  if (!data.ok) return null;
+  return await data.json();
+} catch (e) {
+  console.error('Fetch failed:', e);
+  return null;
+}
+```
+
+## Data & DOM
+
+- Validate structure before accessing nested properties
+- Use optional chaining (`?.`) and nullish coalescing (`??`)
+- Use `fetch` with `cache: 'no-store'` when fresh data is required
+- Use `querySelector` / `getElementById`; prefer `insertAdjacentHTML` over `innerHTML` for appends
+- Use event delegation for dynamic content
+
+## Dates
+
+- Store UTC in JSON; format display with `Intl.DateTimeFormat` and explicit timezone
+- Use `America/New_York` for all user-facing times in this app
+
+## Comments
+
+- Self-documenting names over comments
+- Comment non-obvious business logic (timezone transforms, traffic impact rules)
