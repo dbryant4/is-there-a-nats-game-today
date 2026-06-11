@@ -1,20 +1,10 @@
 {
-  "lastUpdated": "2026-06-10T06:38:04.962Z",
-  "eventsToday": [
-    {
-      "title": "THE CONGRESSIONAL BASEBALL GAME FOR CHARITY",
-      "startISO": "2026-06-10T08:00:00.000Z",
-      "url": "https://www.mlb.com/nationals/tickets/specials/congressional-baseball"
-    },
-    {
-      "title": "Event",
-      "startISO": "2026-06-10T08:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-06-11T05:46:39.693Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "THE CONGRESSIONAL BASEBALL GAME FOR CHARITY",
-    "startISO": "2026-06-10T08:00:00.000Z",
-    "url": "https://www.mlb.com/nationals/tickets/specials/congressional-baseball",
-    "isToday": true
+    "title": "WALE: EVERYTHING IS A LOT. WITH SMINO",
+    "startISO": "2026-06-20T08:00:00.000Z",
+    "url": "https://www.mlb.com/nationals/tickets/concerts/plaza-stage/wale-and-smino",
+    "isToday": false
   }
 }

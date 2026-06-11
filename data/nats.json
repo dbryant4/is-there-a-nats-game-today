@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-06-10T06:38:03.928Z",
+  "lastUpdated": "2026-06-11T05:46:38.772Z",
   "nextEvent": {
-    "isToday": true,
-    "isHome": false,
-    "opponent": "San Francisco Giants",
-    "venue": "Oracle Park",
-    "dateISO": "2026-06-10T19:45:00Z"
+    "isToday": false,
+    "isHome": true,
+    "opponent": "Seattle Mariners",
+    "venue": "Nationals Park",
+    "dateISO": "2026-06-12T22:45:00Z"
   }
 }
