@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2026-06-12T06:39:45.889Z",
-  "eventsToday": [],
+  "lastUpdated": "2026-06-13T05:41:23.377Z",
+  "eventsToday": [
+    {
+      "title": "2026 United Bowl - UFL Championship",
+      "startISO": "2026-06-13T19:00:00.000Z",
+      "endISO": "2026-06-13T22:30:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "2026 United Bowl - UFL Championship",
     "startISO": "2026-06-13T19:00:00.000Z",
     "endISO": "2026-06-13T22:30:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }
