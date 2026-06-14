@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2026-06-13T06:31:45.898Z",
-  "eventsToday": [
-    {
-      "title": "2026 United Bowl - UFL Championship",
-      "startISO": "2026-06-13T19:00:00.000Z",
-      "endISO": "2026-06-13T22:30:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-06-14T05:45:37.954Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "2026 United Bowl - UFL Championship",
-    "startISO": "2026-06-13T19:00:00.000Z",
-    "endISO": "2026-06-13T22:30:00.000Z",
-    "isToday": true
+    "title": "Rüfüs Du Sol",
+    "startISO": "2026-06-18T00:00:00.000Z",
+    "endISO": "2026-06-19T00:00:00.000Z",
+    "isToday": false
   }
 }
