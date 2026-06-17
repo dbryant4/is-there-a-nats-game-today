@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2026-06-16T06:55:43.349Z",
-  "eventsToday": [],
+  "lastUpdated": "2026-06-17T05:52:20.929Z",
+  "eventsToday": [
+    {
+      "title": "Rüfüs Du Sol",
+      "startISO": "2026-06-18T00:00:00.000Z",
+      "endISO": "2026-06-19T00:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "Rüfüs Du Sol",
     "startISO": "2026-06-18T00:00:00.000Z",
     "endISO": "2026-06-19T00:00:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }
