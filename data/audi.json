@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2026-06-17T06:48:56.206Z",
-  "eventsToday": [
-    {
-      "title": "Rüfüs Du Sol",
-      "startISO": "2026-06-18T00:00:00.000Z",
-      "endISO": "2026-06-19T00:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-06-18T05:48:14.046Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "Rüfüs Du Sol",
-    "startISO": "2026-06-18T00:00:00.000Z",
-    "endISO": "2026-06-19T00:00:00.000Z",
-    "isToday": true
+    "title": "Washington Spirit vs. Houston Dash",
+    "startISO": "2026-07-04T00:00:00.000Z",
+    "endISO": "2026-07-04T03:00:00.000Z",
+    "isToday": false
   }
 }

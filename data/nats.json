@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-06-17T06:48:54.516Z",
+  "lastUpdated": "2026-06-18T05:48:12.759Z",
   "nextEvent": {
-    "isToday": true,
-    "isHome": true,
-    "opponent": "Kansas City Royals",
-    "venue": "Nationals Park",
-    "dateISO": "2026-06-17T17:05:00Z"
+    "isToday": false,
+    "isHome": false,
+    "opponent": "Tampa Bay Rays",
+    "venue": "Tropicana Field",
+    "dateISO": "2026-06-19T23:10:00Z"
   }
 }
