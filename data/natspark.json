@@ -1,10 +1,20 @@
 {
-  "lastUpdated": "2026-06-18T06:41:33.876Z",
-  "eventsToday": [],
+  "lastUpdated": "2026-06-19T05:55:22.038Z",
+  "eventsToday": [
+    {
+      "title": "SOULED OUT DATES: JUNETEENTH BLOCK PARTY",
+      "startISO": "2026-06-19T08:00:00.000Z",
+      "url": "https://www.mlb.com/nationals/tickets/concerts/plaza-stage/sod"
+    },
+    {
+      "title": "Event",
+      "startISO": "2026-06-19T08:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "SOULED OUT DATES: JUNETEENTH BLOCK PARTY",
     "startISO": "2026-06-19T08:00:00.000Z",
     "url": "https://www.mlb.com/nationals/tickets/concerts/plaza-stage/sod",
-    "isToday": false
+    "isToday": true
   }
 }
