@@ -1,20 +1,10 @@
 {
-  "lastUpdated": "2026-06-21T06:41:26.649Z",
-  "eventsToday": [
-    {
-      "title": "WALE: EVERYTHING IS A LOT. WITH UCB (ORIGINAL BAND)",
-      "startISO": "2026-06-21T08:00:00.000Z",
-      "url": "https://www.mlb.com/nationals/tickets/concerts/plaza-stage/wale-and-ucb"
-    },
-    {
-      "title": "Event",
-      "startISO": "2026-06-21T08:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-06-22T06:03:44.160Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "WALE: EVERYTHING IS A LOT. WITH UCB (ORIGINAL BAND)",
-    "startISO": "2026-06-21T08:00:00.000Z",
-    "url": "https://www.mlb.com/nationals/tickets/concerts/plaza-stage/wale-and-ucb",
-    "isToday": true
+    "title": "DINNER ON THE DIAMOND",
+    "startISO": "2026-06-26T08:00:00.000Z",
+    "url": "https://www.mlb.com/nationals/tickets/events/dinner-on-the-diamond",
+    "isToday": false
   }
 }
