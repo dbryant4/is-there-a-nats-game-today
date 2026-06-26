@@ -1,10 +1,20 @@
 {
-  "lastUpdated": "2026-06-25T06:28:48.990Z",
-  "eventsToday": [],
+  "lastUpdated": "2026-06-26T05:37:05.315Z",
+  "eventsToday": [
+    {
+      "title": "DINNER ON THE DIAMOND",
+      "startISO": "2026-06-26T08:00:00.000Z",
+      "url": "https://www.mlb.com/nationals/tickets/events/dinner-on-the-diamond"
+    },
+    {
+      "title": "Event",
+      "startISO": "2026-06-26T08:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "DINNER ON THE DIAMOND",
     "startISO": "2026-06-26T08:00:00.000Z",
     "url": "https://www.mlb.com/nationals/tickets/events/dinner-on-the-diamond",
-    "isToday": false
+    "isToday": true
   }
 }
