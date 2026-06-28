@@ -1,20 +1,10 @@
 {
-  "lastUpdated": "2026-06-27T06:16:29.809Z",
-  "eventsToday": [
-    {
-      "title": "ADOBO DAY PARTY",
-      "startISO": "2026-06-27T08:00:00.000Z",
-      "url": "https://www.mlb.com/nationals/tickets/concerts/plaza-stage/adobo"
-    },
-    {
-      "title": "Event",
-      "startISO": "2026-06-27T08:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-06-28T05:40:51.833Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "ADOBO DAY PARTY",
-    "startISO": "2026-06-27T08:00:00.000Z",
-    "url": "https://www.mlb.com/nationals/tickets/concerts/plaza-stage/adobo",
-    "isToday": true
+    "title": "NOAH KAHAN: THE GREAT DIVIDE 2026",
+    "startISO": "2026-07-22T08:00:00.000Z",
+    "url": "https://www.mlb.com/nationals/tickets/concerts/noah-kahan",
+    "isToday": false
   }
 }
