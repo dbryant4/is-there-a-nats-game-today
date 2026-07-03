@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2026-07-02T06:23:00.893Z",
-  "eventsToday": [],
+  "lastUpdated": "2026-07-03T07:32:14.197Z",
+  "eventsToday": [
+    {
+      "title": "Washington Spirit vs. Houston Dash",
+      "startISO": "2026-07-04T00:00:00.000Z",
+      "endISO": "2026-07-04T03:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "Washington Spirit vs. Houston Dash",
     "startISO": "2026-07-04T00:00:00.000Z",
     "endISO": "2026-07-04T03:00:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }
