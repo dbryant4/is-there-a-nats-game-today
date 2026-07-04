@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2026-07-03T08:18:09.801Z",
-  "eventsToday": [
-    {
-      "title": "Washington Spirit vs. Houston Dash",
-      "startISO": "2026-07-04T00:00:00.000Z",
-      "endISO": "2026-07-04T03:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-07-04T07:11:12.670Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "Washington Spirit vs. Houston Dash",
-    "startISO": "2026-07-04T00:00:00.000Z",
-    "endISO": "2026-07-04T03:00:00.000Z",
-    "isToday": true
+    "title": "D.C. United vs. Toronto FC",
+    "startISO": "2026-07-25T23:30:00.000Z",
+    "endISO": "2026-07-26T02:00:00.000Z",
+    "isToday": false
   }
 }
