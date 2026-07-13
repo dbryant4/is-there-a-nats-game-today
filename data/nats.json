@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-12T07:33:32.217Z",
+  "lastUpdated": "2026-07-13T07:32:07.443Z",
   "nextEvent": {
-    "isToday": true,
-    "isHome": true,
-    "opponent": "New York Yankees",
-    "venue": "Nationals Park",
-    "dateISO": "2026-07-12T17:35:00Z"
+    "isToday": false,
+    "isHome": false,
+    "opponent": "Athletics",
+    "venue": "Sutter Health Park",
+    "dateISO": "2026-07-18T01:40:00Z"
   }
 }
