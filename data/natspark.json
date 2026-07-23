@@ -1,20 +1,10 @@
 {
-  "lastUpdated": "2026-07-22T07:39:21.707Z",
-  "eventsToday": [
-    {
-      "title": "NOAH KAHAN: THE GREAT DIVIDE 2026",
-      "startISO": "2026-07-22T08:00:00.000Z",
-      "url": "https://www.mlb.com/nationals/tickets/concerts/noah-kahan"
-    },
-    {
-      "title": "Event",
-      "startISO": "2026-07-22T08:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-07-23T06:37:02.126Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "NOAH KAHAN: THE GREAT DIVIDE 2026",
-    "startISO": "2026-07-22T08:00:00.000Z",
-    "url": "https://www.mlb.com/nationals/tickets/concerts/noah-kahan",
-    "isToday": true
+    "title": "SOJA WITH VERY SPECIAL GUEST PIGEONS PLAYING PING PONG",
+    "startISO": "2026-08-01T08:00:00.000Z",
+    "url": "https://www.mlb.com/nationals/tickets/concerts/soja",
+    "isToday": false
   }
 }
