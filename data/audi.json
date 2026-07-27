@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2026-07-26T07:42:18.029Z",
-  "eventsToday": [
-    {
-      "title": "Washington Spirit vs. Denver Summit FC",
-      "startISO": "2026-07-26T23:00:00.000Z",
-      "endISO": "2026-07-27T02:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-07-27T07:45:01.584Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "Washington Spirit vs. Denver Summit FC",
-    "startISO": "2026-07-26T23:00:00.000Z",
-    "endISO": "2026-07-27T02:00:00.000Z",
-    "isToday": true
+    "title": "Movies on the Pitch: Captain America: Winter Solider (2014)",
+    "startISO": "2026-07-30T23:00:00.000Z",
+    "endISO": "2026-07-31T03:00:00.000Z",
+    "isToday": false
   }
 }
