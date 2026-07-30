@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-29T07:49:18.229Z",
+  "lastUpdated": "2026-07-30T06:36:40.399Z",
   "nextEvent": {
     "isToday": true,
-    "isHome": true,
-    "opponent": "Toronto Blue Jays",
-    "venue": "Nationals Park",
-    "dateISO": "2026-07-29T17:05:00Z"
+    "isHome": false,
+    "opponent": "Atlanta Braves",
+    "venue": "Truist Park",
+    "dateISO": "2026-07-30T23:15:00Z"
   }
 }
