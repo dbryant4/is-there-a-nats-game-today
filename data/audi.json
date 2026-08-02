@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2026-08-01T07:33:51.827Z",
+  "lastUpdated": "2026-08-02T06:42:10.824Z",
   "eventsToday": [
     {
-      "title": "D.C. United vs. Nashville SC",
-      "startISO": "2026-08-01T23:30:00.000Z",
-      "endISO": "2026-08-02T02:00:00.000Z"
+      "title": "Washington Spirit vs. San Diego Wave FC",
+      "startISO": "2026-08-02T20:00:00.000Z",
+      "endISO": "2026-08-02T23:00:00.000Z"
     }
   ],
   "nextEvent": {
-    "title": "D.C. United vs. Nashville SC",
-    "startISO": "2026-08-01T23:30:00.000Z",
-    "endISO": "2026-08-02T02:00:00.000Z",
+    "title": "Washington Spirit vs. San Diego Wave FC",
+    "startISO": "2026-08-02T20:00:00.000Z",
+    "endISO": "2026-08-02T23:00:00.000Z",
     "isToday": true
   }
 }

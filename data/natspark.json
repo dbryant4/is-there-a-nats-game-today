@@ -1,20 +1,10 @@
 {
-  "lastUpdated": "2026-08-01T07:33:51.185Z",
-  "eventsToday": [
-    {
-      "title": "SOJA WITH VERY SPECIAL GUEST PIGEONS PLAYING PING PONG",
-      "startISO": "2026-08-01T08:00:00.000Z",
-      "url": "https://www.mlb.com/nationals/tickets/concerts/soja"
-    },
-    {
-      "title": "Event",
-      "startISO": "2026-08-01T08:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-08-02T06:42:10.486Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "SOJA WITH VERY SPECIAL GUEST PIGEONS PLAYING PING PONG",
-    "startISO": "2026-08-01T08:00:00.000Z",
-    "url": "https://www.mlb.com/nationals/tickets/concerts/soja",
-    "isToday": true
+    "title": "FOO FIGHTERS: TAKE COVER TOUR 2026",
+    "startISO": "2026-08-17T08:00:00.000Z",
+    "url": "https://www.mlb.com/nationals/tickets/concerts/foo-fighters",
+    "isToday": false
   }
 }
