@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-06T07:45:52.436Z",
+  "lastUpdated": "2026-08-07T05:47:33.033Z",
   "nextEvent": {
     "isToday": true,
-    "isHome": false,
-    "opponent": "Philadelphia Phillies",
-    "venue": "Citizens Bank Park",
-    "dateISO": "2026-08-06T22:05:00Z"
+    "isHome": true,
+    "opponent": "Cincinnati Reds",
+    "venue": "Nationals Park",
+    "dateISO": "2026-08-07T22:45:00Z"
   }
 }
