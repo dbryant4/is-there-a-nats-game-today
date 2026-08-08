@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2026-08-07T06:12:56.968Z",
-  "eventsToday": [],
+  "lastUpdated": "2026-08-08T05:06:42.545Z",
+  "eventsToday": [
+    {
+      "title": "Washington Spirit vs. North Carolina Courage",
+      "startISO": "2026-08-08T22:30:00.000Z",
+      "endISO": "2026-08-09T01:30:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "Washington Spirit vs. North Carolina Courage",
     "startISO": "2026-08-08T22:30:00.000Z",
     "endISO": "2026-08-09T01:30:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }
