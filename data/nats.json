@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-13T06:22:57.142Z",
+  "lastUpdated": "2026-08-14T05:42:50.397Z",
   "nextEvent": {
     "isToday": true,
-    "isHome": true,
-    "opponent": "Chicago Cubs",
-    "venue": "Nationals Park",
-    "dateISO": "2026-08-13T20:05:00Z"
+    "isHome": false,
+    "opponent": "New York Mets",
+    "venue": "Citi Field",
+    "dateISO": "2026-08-14T23:10:00Z"
   }
 }
