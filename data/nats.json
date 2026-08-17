@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-16T05:36:03.024Z",
+  "lastUpdated": "2026-08-17T04:53:14.118Z",
   "nextEvent": {
-    "isToday": true,
+    "isToday": false,
     "isHome": false,
-    "opponent": "New York Mets",
-    "venue": "Citi Field",
-    "dateISO": "2026-08-16T17:40:00Z"
+    "opponent": "Texas Rangers",
+    "venue": "Globe Life Field",
+    "dateISO": "2026-08-19T00:05:00Z"
   }
 }
