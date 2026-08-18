@@ -1,20 +1,20 @@
 {
-  "lastUpdated": "2026-08-17T05:42:10.896Z",
+  "lastUpdated": "2026-08-18T04:46:10.182Z",
   "eventsToday": [
     {
-      "title": "FOO FIGHTERS: TAKE COVER TOUR 2026",
-      "startISO": "2026-08-17T08:00:00.000Z",
-      "url": "https://www.mlb.com/nationals/tickets/concerts/foo-fighters"
+      "title": "MY CHEMICAL ROMANCE: THE BLACK PARADE 2026",
+      "startISO": "2026-08-18T08:00:00.000Z",
+      "url": "https://www.mlb.com/nationals/tickets/concerts/my-chemical-romance"
     },
     {
       "title": "Event",
-      "startISO": "2026-08-17T08:00:00.000Z"
+      "startISO": "2026-08-18T08:00:00.000Z"
     }
   ],
   "nextEvent": {
-    "title": "FOO FIGHTERS: TAKE COVER TOUR 2026",
-    "startISO": "2026-08-17T08:00:00.000Z",
-    "url": "https://www.mlb.com/nationals/tickets/concerts/foo-fighters",
+    "title": "MY CHEMICAL ROMANCE: THE BLACK PARADE 2026",
+    "startISO": "2026-08-18T08:00:00.000Z",
+    "url": "https://www.mlb.com/nationals/tickets/concerts/my-chemical-romance",
     "isToday": true
   }
 }
