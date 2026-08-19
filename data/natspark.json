@@ -1,20 +1,10 @@
 {
-  "lastUpdated": "2026-08-18T05:37:06.850Z",
-  "eventsToday": [
-    {
-      "title": "MY CHEMICAL ROMANCE: THE BLACK PARADE 2026",
-      "startISO": "2026-08-18T08:00:00.000Z",
-      "url": "https://www.mlb.com/nationals/tickets/concerts/my-chemical-romance"
-    },
-    {
-      "title": "Event",
-      "startISO": "2026-08-18T08:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-08-19T04:46:48.639Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "MY CHEMICAL ROMANCE: THE BLACK PARADE 2026",
-    "startISO": "2026-08-18T08:00:00.000Z",
-    "url": "https://www.mlb.com/nationals/tickets/concerts/my-chemical-romance",
-    "isToday": true
+    "title": "JASON ALDEAN &amp; LUKE BRYAN: DOUBLE DOWN TOUR",
+    "startISO": "2026-08-20T08:00:00.000Z",
+    "url": "https://www.mlb.com/nationals/tickets/concerts/doubledown",
+    "isToday": false
   }
 }
