@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2026-08-19T05:38:20.729Z",
+  "lastUpdated": "2026-08-20T04:47:55.267Z",
   "eventsToday": [
     {
-      "title": "D.C. United vs. New England Revolution",
-      "startISO": "2026-08-19T23:30:00.000Z",
-      "endISO": "2026-08-20T02:00:00.000Z"
+      "title": "Movies on the Pitch: Top Gun: Maverick (2022)",
+      "startISO": "2026-08-20T23:00:00.000Z",
+      "endISO": "2026-08-21T03:00:00.000Z"
     }
   ],
   "nextEvent": {
-    "title": "D.C. United vs. New England Revolution",
-    "startISO": "2026-08-19T23:30:00.000Z",
-    "endISO": "2026-08-20T02:00:00.000Z",
+    "title": "Movies on the Pitch: Top Gun: Maverick (2022)",
+    "startISO": "2026-08-20T23:00:00.000Z",
+    "endISO": "2026-08-21T03:00:00.000Z",
     "isToday": true
   }
 }
