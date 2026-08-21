@@ -1,20 +1,10 @@
 {
-  "lastUpdated": "2026-08-20T05:38:41.591Z",
-  "eventsToday": [
-    {
-      "title": "JASON ALDEAN &amp; LUKE BRYAN: DOUBLE DOWN TOUR",
-      "startISO": "2026-08-20T08:00:00.000Z",
-      "url": "https://www.mlb.com/nationals/tickets/concerts/doubledown"
-    },
-    {
-      "title": "Event",
-      "startISO": "2026-08-20T08:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-08-21T04:49:38.004Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "JASON ALDEAN &amp; LUKE BRYAN: DOUBLE DOWN TOUR",
-    "startISO": "2026-08-20T08:00:00.000Z",
-    "url": "https://www.mlb.com/nationals/tickets/concerts/doubledown",
-    "isToday": true
+    "title": "The Savanah Bananas: 2026 Banana Bowl Championship",
+    "startISO": "2026-10-10T08:00:00.000Z",
+    "url": "https://www.mlb.com/nationals/tickets/specials/savannah-bananas",
+    "isToday": false
   }
 }

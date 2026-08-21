@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2026-08-20T05:38:42.504Z",
-  "eventsToday": [
-    {
-      "title": "Movies on the Pitch: Top Gun: Maverick (2022)",
-      "startISO": "2026-08-20T23:00:00.000Z",
-      "endISO": "2026-08-21T03:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-08-21T04:49:38.597Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "Movies on the Pitch: Top Gun: Maverick (2022)",
-    "startISO": "2026-08-20T23:00:00.000Z",
-    "endISO": "2026-08-21T03:00:00.000Z",
-    "isToday": true
+    "title": "HBCU Invitational",
+    "startISO": "2026-08-22T19:00:00.000Z",
+    "endISO": "2026-08-22T21:00:00.000Z",
+    "isToday": false
   }
 }
