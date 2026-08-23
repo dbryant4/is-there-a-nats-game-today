@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2026-08-22T05:35:13.458Z",
+  "lastUpdated": "2026-08-23T04:48:00.390Z",
   "eventsToday": [
     {
-      "title": "HBCU Invitational",
-      "startISO": "2026-08-22T19:00:00.000Z",
-      "endISO": "2026-08-22T21:00:00.000Z"
+      "title": "Washington Spirit vs. Orlando Pride",
+      "startISO": "2026-08-23T20:00:00.000Z",
+      "endISO": "2026-08-23T23:00:00.000Z"
     }
   ],
   "nextEvent": {
-    "title": "HBCU Invitational",
-    "startISO": "2026-08-22T19:00:00.000Z",
-    "endISO": "2026-08-22T21:00:00.000Z",
+    "title": "Washington Spirit vs. Orlando Pride",
+    "startISO": "2026-08-23T20:00:00.000Z",
+    "endISO": "2026-08-23T23:00:00.000Z",
     "isToday": true
   }
 }
