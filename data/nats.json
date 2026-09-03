@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-09-02T09:28:19.182Z",
+  "lastUpdated": "2026-09-03T08:52:46.020Z",
   "nextEvent": {
-    "isToday": true,
-    "isHome": true,
-    "opponent": "Atlanta Braves",
-    "venue": "Nationals Park",
-    "dateISO": "2026-09-02T17:05:00Z"
+    "isToday": false,
+    "isHome": false,
+    "opponent": "Los Angeles Dodgers",
+    "venue": "UNIQLO Field at Dodger Stadium",
+    "dateISO": "2026-09-05T02:10:00Z"
   }
 }
