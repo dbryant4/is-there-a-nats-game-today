@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-09-13T10:08:20.667Z",
+  "lastUpdated": "2026-09-14T09:47:04.138Z",
   "nextEvent": {
-    "isToday": true,
+    "isToday": false,
     "isHome": true,
-    "opponent": "Los Angeles Angels",
+    "opponent": "Philadelphia Phillies",
     "venue": "Nationals Park",
-    "dateISO": "2026-09-13T17:35:00Z"
+    "dateISO": "2026-09-15T22:45:00Z"
   }
 }

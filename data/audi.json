@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2026-09-13T10:08:21.923Z",
-  "eventsToday": [
-    {
-      "title": "Washington Spirit vs. Boston Legacy FC",
-      "startISO": "2026-09-13T17:00:00.000Z",
-      "endISO": "2026-09-13T20:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-09-14T09:47:06.721Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "Washington Spirit vs. Boston Legacy FC",
-    "startISO": "2026-09-13T17:00:00.000Z",
-    "endISO": "2026-09-13T20:00:00.000Z",
-    "isToday": true
+    "title": "D.C. United vs. Charlotte FC",
+    "startISO": "2026-09-19T23:30:00.000Z",
+    "endISO": "2026-09-20T02:00:00.000Z",
+    "isToday": false
   }
 }
