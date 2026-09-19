@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2026-09-18T09:36:26.109Z",
-  "eventsToday": [],
+  "lastUpdated": "2026-09-19T08:45:11.274Z",
+  "eventsToday": [
+    {
+      "title": "D.C. United vs. Charlotte FC",
+      "startISO": "2026-09-19T23:30:00.000Z",
+      "endISO": "2026-09-20T02:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "D.C. United vs. Charlotte FC",
     "startISO": "2026-09-19T23:30:00.000Z",
     "endISO": "2026-09-20T02:00:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }
