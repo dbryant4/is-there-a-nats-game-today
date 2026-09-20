@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2026-09-19T09:23:36.990Z",
-  "eventsToday": [
-    {
-      "title": "D.C. United vs. Charlotte FC",
-      "startISO": "2026-09-19T23:30:00.000Z",
-      "endISO": "2026-09-20T02:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-09-20T09:14:07.707Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "D.C. United vs. Charlotte FC",
-    "startISO": "2026-09-19T23:30:00.000Z",
-    "endISO": "2026-09-20T02:00:00.000Z",
-    "isToday": true
+    "title": "Washington Spirit vs. Angel City FC",
+    "startISO": "2026-09-26T22:30:00.000Z",
+    "endISO": "2026-09-27T01:30:00.000Z",
+    "isToday": false
   }
 }
