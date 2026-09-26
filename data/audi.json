@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2026-09-25T10:07:33.832Z",
-  "eventsToday": [],
+  "lastUpdated": "2026-09-26T09:18:00.973Z",
+  "eventsToday": [
+    {
+      "title": "Washington Spirit vs. Angel City FC",
+      "startISO": "2026-09-26T22:30:00.000Z",
+      "endISO": "2026-09-27T01:30:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "Washington Spirit vs. Angel City FC",
     "startISO": "2026-09-26T22:30:00.000Z",
     "endISO": "2026-09-27T01:30:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }
