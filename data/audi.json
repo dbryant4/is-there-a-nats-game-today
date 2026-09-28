@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2026-09-27T10:29:35.385Z",
-  "eventsToday": [
-    {
-      "title": "Bolivia vs. Paraguay",
-      "startISO": "2026-09-27T20:30:00.000Z",
-      "endISO": "2026-09-27T23:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-09-28T10:48:34.710Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "Bolivia vs. Paraguay",
-    "startISO": "2026-09-27T20:30:00.000Z",
-    "endISO": "2026-09-27T23:00:00.000Z",
-    "isToday": true
+    "title": "Battle of the Real HU: Hampton University vs. Howard University",
+    "startISO": "2026-10-03T19:00:00.000Z",
+    "endISO": "2026-10-03T22:00:00.000Z",
+    "isToday": false
   }
 }
