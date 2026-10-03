@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2026-10-02T11:00:50.700Z",
-  "eventsToday": [],
+  "lastUpdated": "2026-10-03T09:48:28.563Z",
+  "eventsToday": [
+    {
+      "title": "Battle of the Real HU: Hampton University vs. Howard University",
+      "startISO": "2026-10-03T19:00:00.000Z",
+      "endISO": "2026-10-03T22:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "Battle of the Real HU: Hampton University vs. Howard University",
     "startISO": "2026-10-03T19:00:00.000Z",
     "endISO": "2026-10-03T22:00:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }
