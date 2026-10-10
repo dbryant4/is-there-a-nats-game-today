@@ -1,10 +1,20 @@
 {
-  "lastUpdated": "2026-10-09T11:48:07.668Z",
-  "eventsToday": [],
+  "lastUpdated": "2026-10-10T10:33:01.953Z",
+  "eventsToday": [
+    {
+      "title": "The Savannah Bananas: 2026 Banana Bowl Championship",
+      "startISO": "2026-10-10T08:00:00.000Z",
+      "url": "https://www.mlb.com/nationals/tickets/specials/savannah-bananas"
+    },
+    {
+      "title": "Event",
+      "startISO": "2026-10-10T08:00:00.000Z"
+    }
+  ],
   "nextEvent": {
-    "title": "The Savannah Bananas: 2026 Banana Bowl Championship",
-    "startISO": "2026-10-10T08:00:00.000Z",
-    "url": "https://www.mlb.com/nationals/tickets/specials/savannah-bananas",
+    "title": "Black on the Block",
+    "startISO": "2026-10-24T08:00:00.000Z",
+    "url": "https://www.mlb.com/nationals/tickets/events/black-on-the-block",
     "isToday": false
   }
 }
