@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2026-10-13T12:36:08.252Z",
-  "eventsToday": [],
+  "lastUpdated": "2026-10-14T09:27:16.130Z",
+  "eventsToday": [
+    {
+      "title": "D.C. United vs. New York Red Bull",
+      "startISO": "2026-10-14T23:30:00.000Z",
+      "endISO": "2026-10-15T02:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "D.C. United vs. New York Red Bull",
     "startISO": "2026-10-14T23:30:00.000Z",
     "endISO": "2026-10-15T02:00:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }
