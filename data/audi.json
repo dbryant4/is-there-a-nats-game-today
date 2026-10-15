@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2026-10-14T10:02:52.877Z",
-  "eventsToday": [
-    {
-      "title": "D.C. United vs. New York Red Bull",
-      "startISO": "2026-10-14T23:30:00.000Z",
-      "endISO": "2026-10-15T02:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-10-15T09:05:17.553Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "D.C. United vs. New York Red Bull",
-    "startISO": "2026-10-14T23:30:00.000Z",
-    "endISO": "2026-10-15T02:00:00.000Z",
-    "isToday": true
+    "title": "Washington Spirit vs. Gotham FC",
+    "startISO": "2026-10-17T16:30:00.000Z",
+    "endISO": "2026-10-17T19:30:00.000Z",
+    "isToday": false
   }
 }
