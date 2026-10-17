@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2026-10-16T09:39:12.269Z",
-  "eventsToday": [],
+  "lastUpdated": "2026-10-17T08:29:53.680Z",
+  "eventsToday": [
+    {
+      "title": "Washington Spirit vs. Gotham FC",
+      "startISO": "2026-10-17T16:30:00.000Z",
+      "endISO": "2026-10-17T19:30:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "Washington Spirit vs. Gotham FC",
     "startISO": "2026-10-17T16:30:00.000Z",
     "endISO": "2026-10-17T19:30:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }
