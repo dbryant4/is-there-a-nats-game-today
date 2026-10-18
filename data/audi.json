@@ -1,16 +1,10 @@
 {
-  "lastUpdated": "2026-10-17T09:11:09.444Z",
-  "eventsToday": [
-    {
-      "title": "Washington Spirit vs. Gotham FC",
-      "startISO": "2026-10-17T16:30:00.000Z",
-      "endISO": "2026-10-17T19:30:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-10-18T08:47:38.917Z",
+  "eventsToday": [],
   "nextEvent": {
-    "title": "Washington Spirit vs. Gotham FC",
-    "startISO": "2026-10-17T16:30:00.000Z",
-    "endISO": "2026-10-17T19:30:00.000Z",
-    "isToday": true
+    "title": "D.C. United vs. FC Cincinnati",
+    "startISO": "2026-10-24T23:30:00.000Z",
+    "endISO": "2026-10-25T02:00:00.000Z",
+    "isToday": false
   }
 }
