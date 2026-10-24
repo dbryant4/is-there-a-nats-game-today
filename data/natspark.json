@@ -1,10 +1,20 @@
 {
-  "lastUpdated": "2026-10-23T09:55:45.990Z",
-  "eventsToday": [],
+  "lastUpdated": "2026-10-24T08:49:07.604Z",
+  "eventsToday": [
+    {
+      "title": "Black on the Block",
+      "startISO": "2026-10-24T08:00:00.000Z",
+      "url": "https://www.mlb.com/nationals/tickets/events/black-on-the-block"
+    },
+    {
+      "title": "Event",
+      "startISO": "2026-10-24T08:00:00.000Z"
+    }
+  ],
   "nextEvent": {
-    "title": "Black on the Block",
-    "startISO": "2026-10-24T08:00:00.000Z",
-    "url": "https://www.mlb.com/nationals/tickets/events/black-on-the-block",
+    "title": "DC Beer Fest",
+    "startISO": "2026-11-07T07:00:00.000Z",
+    "url": "https://www.mlb.com/nationals/tickets/events/dc-beer-festival",
     "isToday": false
   }
 }

@@ -1,10 +1,16 @@
 {
-  "lastUpdated": "2026-10-23T09:55:46.671Z",
-  "eventsToday": [],
+  "lastUpdated": "2026-10-24T08:49:08.372Z",
+  "eventsToday": [
+    {
+      "title": "D.C. United vs. FC Cincinnati",
+      "startISO": "2026-10-24T23:30:00.000Z",
+      "endISO": "2026-10-25T02:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "D.C. United vs. FC Cincinnati",
     "startISO": "2026-10-24T23:30:00.000Z",
     "endISO": "2026-10-25T02:00:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }
