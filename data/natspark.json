@@ -1,16 +1,6 @@
 {
-  "lastUpdated": "2026-11-07T11:38:42.724Z",
-  "eventsToday": [
-    {
-      "title": "DC Beer Fest",
-      "startISO": "2026-11-07T07:00:00.000Z",
-      "url": "https://www.mlb.com/nationals/tickets/events/dc-beer-festival"
-    },
-    {
-      "title": "Event",
-      "startISO": "2026-11-07T07:00:00.000Z"
-    }
-  ],
+  "lastUpdated": "2026-11-08T11:13:16.294Z",
+  "eventsToday": [],
   "nextEvent": {
     "title": "2027 BANANA BALL: FIREFIGHTERS vs PARTY ANIMALS",
     "startISO": "2027-05-22T08:00:00.000Z",

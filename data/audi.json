@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2026-11-07T11:38:43.069Z",
+  "lastUpdated": "2026-11-08T11:13:16.724Z",
   "eventsToday": [
     {
-      "title": "D.C. United vs. NYCFC",
-      "startISO": "2026-11-07T21:00:00.000Z",
-      "endISO": "2026-11-07T23:30:00.000Z"
+      "title": "NWSL Quarterfinal: Washington Spirit vs. Portland Thorns",
+      "startISO": "2026-11-08T18:30:00.000Z",
+      "endISO": "2026-11-08T22:00:00.000Z"
     }
   ],
   "nextEvent": {
-    "title": "D.C. United vs. NYCFC",
-    "startISO": "2026-11-07T21:00:00.000Z",
-    "endISO": "2026-11-07T23:30:00.000Z",
+    "title": "NWSL Quarterfinal: Washington Spirit vs. Portland Thorns",
+    "startISO": "2026-11-08T18:30:00.000Z",
+    "endISO": "2026-11-08T22:00:00.000Z",
     "isToday": true
   }
 }
