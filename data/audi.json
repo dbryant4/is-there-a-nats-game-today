@@ -1,10 +1,21 @@
 {
-  "lastUpdated": "2026-11-13T12:58:54.204Z",
-  "eventsToday": [],
+  "lastUpdated": "2026-11-14T11:23:00.964Z",
+  "eventsToday": [
+    {
+      "title": "NWSL Playoff Semifinal: Washington Spirit vs. Utah Royals FC",
+      "startISO": "2026-11-14T17:00:00.000Z",
+      "endISO": "2026-11-14T19:30:00.000Z"
+    },
+    {
+      "title": "Secretaries Cup: U.S. Coast Guard Academy vs. U.S. Merchant Marine Academy",
+      "startISO": "2026-11-14T21:30:00.000Z",
+      "endISO": "2026-11-15T00:00:00.000Z"
+    }
+  ],
   "nextEvent": {
     "title": "NWSL Playoff Semifinal: Washington Spirit vs. Utah Royals FC",
     "startISO": "2026-11-14T17:00:00.000Z",
     "endISO": "2026-11-14T19:30:00.000Z",
-    "isToday": false
+    "isToday": true
   }
 }
